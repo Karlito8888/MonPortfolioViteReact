@@ -1,4 +1,4 @@
-import { faChevronCircleLeft, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { NavLink } from "react-router-dom";

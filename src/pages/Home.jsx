@@ -3,8 +3,8 @@ import Buttons from "../components/Buttons";
 import DynamicText from "../components/DynamicText";
 import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
-import SocialNetwork from "../components/SocialNetwork";
 import { motion } from "framer-motion";
+import Logo from "../components/Logo";
 
 const Home = () => {
   const variants = {
@@ -35,7 +35,7 @@ const Home = () => {
         variants={variants}
       >
         <Navigation />
-        <SocialNetwork />
+        <Logo />
         <div className="home-main">
           <div className="main-content">
             <motion.h1

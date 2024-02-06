@@ -4,7 +4,6 @@ import Logo from "../components/Logo";
 import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import SocialNetwork from "../components/SocialNetwork";
 import Buttons from "../components/Buttons";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -73,7 +72,6 @@ const Contact = () => {
               </CopyToClipboard>
             </div>
           </div>
-          <SocialNetwork />
           <div className="credits">
             <p>Charles BOURGAULT - 2024</p>
           </div>
