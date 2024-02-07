@@ -1,83 +1,78 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactForm from "../components/ContactForm";
 import Logo from "../components/Logo";
 import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Buttons from "../components/Buttons";
-import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import SocialNetwork from "../components/SocialNetwork";
 
-const Contact = () => {
-  const pageTransition = {
-    in: {
-      opacity: 1,
-      x: 0,
-    },
-    out: {
-      opacity: 0,
-      x: 200,
-    },
+const ContactInfoItem = ({ title, text, copyText, icon }) => {
+  const [copied, setCopied] = useState(false);
+
+  const renderText = () => {
+    if (Array.isArray(text)) {
+      return text.map((line, index) => (
+        <React.Fragment key={index}>
+          {line}
+          {index < text.length - 1 && <br />}
+        </React.Fragment>
+      ));
+    }
+    // Si text n'est pas un tableau, l'afficher tel quel
+    return text;
   };
 
   return (
+    <div className={`content-${title}`}>
+      <h4>{title}</h4>
+      <CopyToClipboard text={copyText} onCopy={() => setCopied(true)}>
+        <p style={{ cursor: "pointer" }} className="clipboard">
+          {icon && <FontAwesomeIcon icon={icon} />}
+          {/* Appel de renderText pour afficher le texte */}
+          {renderText()}
+        </p>
+      </CopyToClipboard>
+      {copied && <p style={{ color: "green", marginTop: "10px" }}>Copié !</p>}
+    </div>
+  );
+};
+
+const Contact = () => {
+ 
+  return (
     <main>
       <Mouse />
-      <motion.div
-        initial="out"
-        animate="in"
-        exit="out"
-        variants={pageTransition}
-        transition={{ duration: 0.4 }}
-        className="contact"
-      >
+      <div className="contact">
         <Navigation />
         <Logo />
         <ContactForm />
         <div className="contact-infos">
-          <div className="address">
-            <div className="content">
-              <h4>adresse</h4>
-              <p>10, rue du Colisée</p>
-              <p>75008 Paris</p>
-            </div>
-          </div>
-          <div className="phone">
-            <div className="content">
-              <h4>téléphone</h4>
-              <CopyToClipboard text="+33642663300" className="hover">
-                <p
-                  style={{ cursor: "pointer" }}
-                  className="clipboard"
-                  onClick={() => alert("Téléphone copié !")}
-                >
-                  <FontAwesomeIcon icon={faWhatsapp} />
-                  06 42 66 33 00
-                </p>
-              </CopyToClipboard>
-            </div>
-          </div>
-          <div className="email">
-            <div className="content">
-              <h4>email</h4>
-              <CopyToClipboard text="fsagency@gmail.com" className="hover">
-                <p
-                  style={{ cursor: "pointer" }}
-                  className="clipboard"
-                  onClick={() => alert("Email copié !")}
-                >
-                  cb.dweb49@gmail.com
-                </p>
-              </CopyToClipboard>
-            </div>
-          </div>
+          <ContactInfoItem
+            title="adresse"
+            text={["Charles BOURGAULT (E.I.)", "10, rue du Colisée", "75008 Paris"]}
+            copyText="Charles BOURGAULT (E.I), 10, rue du Colisée, 75008 Paris"
+          />
+          <ContactInfoItem
+            title="téléphone"
+            text=" 06.42.66.33.00"
+            copyText="+33642663300"
+            icon={faWhatsapp}
+          />
+          <ContactInfoItem
+            title="email"
+            text="cb.dweb49@gmail.com"
+            copyText="cb.dweb49@gmail.com"
+          />
           <div className="credits">
             <p>Charles BOURGAULT - 2024</p>
           </div>
         </div>
+        <SocialNetwork />
         <Buttons left={"/projet-4"} />
-      </motion.div>
+      </div>
     </main>
   );
 };

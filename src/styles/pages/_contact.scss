@@ -180,14 +180,15 @@
       font-size: 1.5rem;
     }
   }
-  .email,
-  .phone {
-    @media screen and (max-height: 640px) {
-      display: none;
-    }
-  }
-  .email .content p,
-  .phone .content p {
+  // .email,
+  // .phone {
+  //   @media screen and (max-height: 640px) {
+  //     display: none;
+  //   }
+  // }
+  .content-téléphone,
+  .content-email,
+  .content-adresse {
     transition: 0.25s;
 
     &:hover {
@@ -195,18 +196,21 @@
     }
   }
 
-  .address {
+  .content-adresse {
     position: relative;
 
     @media screen and (max-width: 540px) {
       display: none;
     }
-    .content {
+
+        .content-téléphone,
+        .content-email,
+    .content-adresse {
       position: absolute;
       right: 10px;
     }
   }
-  .phone {
+  .content-téléphone {
     position: relative;
 
     @media screen and (max-width: 540px) {
@@ -215,7 +219,9 @@
       grid-area: b;
     }
 
-    .content {
+        .content-téléphone,
+        .content-email,
+        .content-adresse {
       position: absolute;
       left: 40%;
       transform: translateX(-50%);
@@ -228,7 +234,7 @@
       }
     }
   }
-  .email {
+  .content-email {
     @media screen and (max-width: 540px) {
       grid-area: c;
       font-size: 0.8rem;
