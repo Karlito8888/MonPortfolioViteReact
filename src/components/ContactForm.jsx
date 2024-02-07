@@ -1,23 +1,22 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { init } from "@emailjs/browser";
 
-const SERVICE_ID = "service_y4q20km";
-const TEMPLATE_ID = "template_5ni7fmu";
-const USER_ID = import.meta.env.VITE_REACT_APP_ID;
-init(import.meta.env.ID);
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
 
 const ContactForm = () => {
   const form = useRef();
-const [message, setMessage] = useState("");
-const [messageType, setMessageType] = useState("");
+  const [message, setMessage] = useState("");
+  const [messageType, setMessageType] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const formMess = document.querySelector(".formMessage");
 
     emailjs
-      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
+      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
+        publicKey: PUBLIC_KEY,
+      })
       .then(
         (res) => {
           console.log(res.text);

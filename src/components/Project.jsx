@@ -1,42 +1,46 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
 
 const Project = ({ projectNumber }) => {
-  const [currentProject] = useState(projectsData[projectNumber]);
-  // On se donne la possibilité de cibler les différents projets, qu'on stocke ensuite dans cette const "currentProject";
-  const [left, setLeft] = useState();
-  const [top, setTop] = useState();
-  const [size, setSize] = useState();
-  // Ces 3 dernières lignes sont pour l'apparation du cercle bleu et sa randomistaion de la taille;
+  const currentProject = projectsData[projectNumber];
+  const [circleStyle, setCircleStyle] = useState({});
+
   useEffect(() => {
-    setLeft(Math.floor(Math.random() * 200 + 700) + "px");
-    setTop(Math.floor(Math.random() * 200 + 150) + "px");
-    setSize("scale(" + (Math.random() + 0.7) + ")");
-  }, []);
+    setCircleStyle({
+      left: `${Math.floor(Math.random() * 200 + 700)}px`,
+      top: `${Math.floor(Math.random() * 200 + 150)}px`,
+      transform: `scale(${Math.random() + 0.7})`,
+    });
+  }, [projectNumber]);
 
-  const variants = {
-    initial: {
-      opacity: 0,
-      transition: { duration: 0.5 },
-      x: 200,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-    },
-    exit: {
-      opacity: 0.4,
-      transition: { duration: 0.35 },
-      x: -800,
-    },
-  };
+  const variants = useMemo(
+    () => ({
+      initial: {
+        opacity: 0,
+        transition: { duration: 0.5 },
+        x: 200,
+      },
+      visible: {
+        opacity: 1,
+        x: 0,
+      },
+      exit: {
+        opacity: 0.4,
+        transition: { duration: 0.35 },
+        x: -800,
+      },
+    }),
+    []
+  );
 
-  const transition = {
-    ease: [0.03, 0.87, 0.73, 0.9],
-    duration: 0.6,
-  };
-  // On crée une const de transition avec un cubic bezier
+  const transition = useMemo(
+    () => ({
+      ease: [0.03, 0.87, 0.73, 0.9],
+      duration: 0.6,
+    }),
+    []
+  );
 
   const imgAnim = {
     initial: {
@@ -50,7 +54,6 @@ const Project = ({ projectNumber }) => {
       y: 0,
     },
   };
-  // C'est cette const imgAnim qui permet d'animer les images principales de façon randomisée.
 
   return (
     <motion.div
@@ -100,10 +103,7 @@ const Project = ({ projectNumber }) => {
           </a>
         </div>
       </motion.div>
-      <span
-        className="random-circle"
-        style={{ left, top, transform: size }}
-      ></span>
+      <span className="random-circle" style={circleStyle}></span>
     </motion.div>
   );
 };
