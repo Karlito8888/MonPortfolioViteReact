@@ -49,7 +49,6 @@ const SocialNetwork = () => {
 
   return (
     <div className="social-network">
-      <ul className="content">
         {socialLinks.map((link) => (
           <SocialLink
             key={link.id}
@@ -60,7 +59,6 @@ const SocialNetwork = () => {
             label={link.label}
           />
         ))}
-      </ul>
     </div>
   );
 };

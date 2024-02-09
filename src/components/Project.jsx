@@ -1,46 +1,31 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
 
 const Project = ({ projectNumber }) => {
   const currentProject = projectsData[projectNumber];
-  const [circleStyle, setCircleStyle] = useState({});
 
-  useEffect(() => {
-    setCircleStyle({
-      left: `${Math.floor(Math.random() * 200 + 700)}px`,
-      top: `${Math.floor(Math.random() * 200 + 150)}px`,
-      transform: `scale(${Math.random() + 0.7})`,
-    });
-  }, [projectNumber]);
+  const variants = {
+    initial: {
+      opacity: 0,
+      transition: { duration: 0.5 },
+      x: 200,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+    },
+    exit: {
+      opacity: 0.4,
+      transition: { duration: 0.35 },
+      x: -800,
+    },
+  };
 
-  const variants = useMemo(
-    () => ({
-      initial: {
-        opacity: 0,
-        transition: { duration: 0.5 },
-        x: 200,
-      },
-      visible: {
-        opacity: 1,
-        x: 0,
-      },
-      exit: {
-        opacity: 0.4,
-        transition: { duration: 0.35 },
-        x: -800,
-      },
-    }),
-    []
-  );
-
-  const transition = useMemo(
-    () => ({
+  const transition = {
       ease: [0.03, 0.87, 0.73, 0.9],
       duration: 0.6,
-    }),
-    []
-  );
+    };
 
   const imgAnim = {
     initial: {
@@ -70,10 +55,10 @@ const Project = ({ projectNumber }) => {
         <ul className="languages">
           {currentProject.languages.map((item) => (
             <li key={item}>{item}</li>
-            // On va chercher les différents langages qu'on va ensuite maper pour les faire apparaitre à l'écran pour chaques projets réalisés et illustrés;
           ))}
         </ul>
       </div>
+
       <motion.div
         initial="initial"
         animate="visible"
@@ -103,7 +88,6 @@ const Project = ({ projectNumber }) => {
           </a>
         </div>
       </motion.div>
-      <span className="random-circle" style={circleStyle}></span>
     </motion.div>
   );
 };

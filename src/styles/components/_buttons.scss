@@ -1,24 +1,39 @@
 .scroll-bottom {
-  a {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    font-size: 3rem;
-    color: rgb(184, 183, 183);
-    transition: 0.25s;
-    user-select: none;
-    padding: 0 14px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    &:hover {
-      font-size: 4rem;
+  .button-right,
+  .button-left {
+    width: 100%;
+
+    a {
+      font-size: clamp(
+        2rem,
+        1.6666666666666667rem + 1.6666666666666667vw,
+        3rem
+      );
+      color: $color-4;
+      transition: 0.25s;
+      user-select: none;
+      padding: 0 14px;
+
+      &:hover {
+        font-size: clamp(2.5rem, 2.1111rem + 1.7778vw, 3.5rem);
+      }
     }
   }
 
-  .left {
-    left: 15px;
-  }
+a.left{
+  position: absolute;
+  left: 0;
+}
 
-  .right {
-    right: -24px;
+  a.right {
+    position: absolute;
+    right: 0;
   }
 }

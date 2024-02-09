@@ -54,7 +54,7 @@ const ContactForm = () => {
     <div className="form-container">
       <h2>contactez-moi</h2>
       <form onSubmit={sendEmail} className="form-content">
-        <label>nom</label>
+        <label>Nom</label>
         <input
           type="text"
           name="name"
@@ -70,7 +70,7 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
-          autoComplete="off"
+          autoComplete="on"
         />
         <label>Message</label>
         <textarea
