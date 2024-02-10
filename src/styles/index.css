@@ -76,9 +76,15 @@ main {
   position: absolute;
   top: 1rem;
   left: 1.4rem;
-  font-size: 1.4rem;
-  line-height: 28px;
+  font-size: 1.6rem;
+  line-height: 150%;
   color: rgb(141, 141, 141);
+}
+@media screen and (max-width: 480px) {
+  .navigation {
+    font-size: 1.3rem;
+    line-height: 120%;
+  }
 }
 .navigation:before {
   content: "";
@@ -377,7 +383,7 @@ main {
   -webkit-animation: contactAnim 25s alternate infinite;
           animation: contactAnim 25s alternate infinite;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 768px) {
   .contact:after {
     height: 400px;
     width: 400px;
@@ -405,16 +411,29 @@ main {
             transform: scale(1);
   }
 }
-@media screen and (max-width: 440px) {
-  .contact .navigation {
-    display: none;
+@media screen and (max-width: 768px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: 0;
   }
 }
 .contact .form-container {
   position: relative;
   max-width: 300px;
 }
+@media screen and (max-width: 480px) {
+  .contact .form-container {
+    padding-top: 30px;
+  }
+}
 .contact .form-container h2 {
+  font-size: clamp(1.2rem, 1.0833rem + 0.5333vw, 1.5rem);
   margin-bottom: 50px;
 }
 .contact .form-container h2:after {
@@ -427,6 +446,12 @@ main {
   top: -22px;
   left: 133px;
   z-index: -1;
+}
+@media screen and (max-width: 480px) {
+  .contact .form-container h2:after {
+    top: 22px;
+    right: -63px;
+  }
 }
 .contact .form-container .form-content {
   display: grid;
@@ -448,12 +473,6 @@ main {
   padding: 6px 0;
   height: 70px;
 }
-@media screen and (max-width: 540px) {
-  .contact .form-container .form-content textarea {
-    width: 75%;
-    padding: 12px 0;
-  }
-}
 .contact .form-container .form-content input.button {
   background: #e7f7fe;
   height: 55px;
@@ -466,16 +485,59 @@ main {
   transition: 0.3s;
   border: none;
 }
+@media screen and (max-width: 916px) and (orientation: landscape) {
+  .contact .form-container h2 {
+    font-size: clamp(1.2rem, 1.0833rem + 0.5333vw, 1.5rem);
+    margin-bottom: 0px;
+  }
+  .contact .form-container input {
+    padding: 6px;
+    margin-bottom: 10px;
+  }
+  .contact .form-container textarea {
+    resize: none;
+    padding: 6px 0;
+    height: 30px;
+  }
+}
 .contact .contact-infos {
   position: relative;
   height: 440px;
   width: 350px;
+}
+@media screen and (max-width: 768px) {
+  .contact .contact-infos {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  .contact .contact-infos .react-multi-carousel-list {
+    height: 140%;
+  }
+  .contact .contact-infos .react-multi-carousel-list .react-multi-carousel-dot-list {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact .contact-infos {
+    display: none;
+  }
+}
+@media screen and (max-width: 916px) and (orientation: landscape) {
+  .contact .contact-infos {
+    display: none;
+  }
 }
 .contact .contact-infos h4 {
   color: rgb(141, 141, 141);
   font-size: clamp(1.3rem, 1.1056rem + 0.8889vw, 1.8rem);
   font-weight: 200;
   margin-bottom: 10px;
+}
+.contact .contact-infos p {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 130%;
 }
 .contact .contact-infos .content-téléphone,
 .contact .contact-infos .content-email,
@@ -491,15 +553,29 @@ main {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
 }
+@media screen and (max-width: 768px) {
+  .contact .contact-infos .content-téléphone,
+  .contact .contact-infos .content-email,
+  .contact .contact-infos .content-adresse {
+    position: static;
+    line-height: 130%;
+  }
+}
 .contact .contact-infos .content-adresse {
   top: 11px;
   right: 0px;
+}
+@media screen and (max-width: 768px) {
+  .contact .contact-infos .content-adresse {
+    text-align: center;
+    font-size: 0.8rem;
+  }
 }
 .contact .contact-infos .content-téléphone {
   top: 35%;
   left: 18%;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
   .contact .contact-infos .content-téléphone {
     text-align: center;
     font-size: 0.8rem;
@@ -508,7 +584,7 @@ main {
 .contact .contact-infos .content-email {
   top: 65%;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
   .contact .contact-infos .content-email {
     font-size: 0.8rem;
     text-align: center;
@@ -519,13 +595,10 @@ main {
   bottom: 5px;
   right: 0;
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
   .contact .contact-infos .credits {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-    font-size: 0.7rem;
-    margin-right: 1rem;
-    grid-area: f;
+    position: static;
+    text-align: right;
   }
 }
 .contact .contact-infos .credits p {

@@ -7,6 +7,7 @@ import Logo from "../components/Logo";
 import SocialNetwork from "../components/SocialNetwork";
 
 const Home = () => {
+
   return (
     <>
       <Mouse />

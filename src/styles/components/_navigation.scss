@@ -2,9 +2,14 @@
   position: absolute;
   top: 1rem;
   left: 1.4rem;
-  font-size: 1.4rem;
-  line-height: 28px;
+  font-size: 1.6rem;
+  line-height: 150%;
   color: $color-4;
+
+  @media screen and (max-width: 480px) {
+      font-size: 1.3rem;
+        line-height: 120%;
+  }
 
   &:before {
     content: '';
