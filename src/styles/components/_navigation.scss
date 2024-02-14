@@ -1,5 +1,6 @@
 .navigation {
   position: absolute;
+  overflow: visible;
   top: 1rem;
   left: 1.4rem;
   font-size: 1.6rem;
@@ -7,12 +8,12 @@
   color: $color-4;
 
   @media screen and (max-width: 480px) {
-      font-size: 1.3rem;
-        line-height: 120%;
+    font-size: 1.3rem;
+    line-height: 120%;
   }
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     height: 300px;
     width: 300px;
@@ -31,18 +32,18 @@
         transform: scale(1);
       }
     }
-        @media screen and (max-width: 480px) {
-          height: 250px;
-          width: 250px;
-          top: -90px;
-          left: -80px;
-        }
+    @media screen and (max-width: 480px) {
+      height: 250px;
+      width: 250px;
+      top: -90px;
+      left: -80px;
+    }
   }
   .nav-active {
     color: $black;
   }
   ul:hover li:not(:hover) {
-    opacity: .5;
+    opacity: 0.5;
   }
   ul:hover li:hover {
     color: $black;
@@ -51,16 +52,15 @@
   .nav-portfolio {
     cursor: pointer;
     display: flex;
-    transition: .5s;
+    transition: 0.5s;
 
     &:hover .nav-projects,
     .nav-projects:hover {
-
       visibility: visible;
       opacity: 1;
 
       li {
-        transform: rotateY(0deg)
+        transform: rotateY(0deg);
       }
     }
 
@@ -69,15 +69,25 @@
       visibility: hidden;
       opacity: 0;
       padding: 0 40px;
-      width: 300px;
+      // width: 300px;
+      width: auto;
       transform: translateX(70px);
-      transition: .3s ;
+      transition: 0.3s;
       perspective: 500px;
+
+      @media screen and (max-width: 1023px) and (orientation: landscape) {
+        display: flex;
+        gap: 15px;
+      }
 
       li {
         transform: rotateY(30deg) scaleX(1.2);
         transform-origin: center;
-        transition: .3s;
+        transition: 0.3s;
+
+        a {
+          display: flex;
+        }
       }
     }
   }

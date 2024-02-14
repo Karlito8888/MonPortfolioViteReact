@@ -15,10 +15,10 @@ function App() {
       <AnimatePresence>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projet-1" element={<Project1 />} />
-          <Route path="/projet-2" element={<Project2 />} />
-          <Route path="/projet-3" element={<Project3 />} />
-          <Route path="/projet-4" element={<Project4 />} />
+          <Route path="/projet-SASS" element={<Project1 />} />
+          <Route path="/projet-JS" element={<Project2 />} />
+          <Route path="/projet-REACT" element={<Project3 />} />
+          <Route path="/projet-Jeux" element={<Project4 />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

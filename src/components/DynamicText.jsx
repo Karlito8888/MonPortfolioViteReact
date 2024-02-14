@@ -5,10 +5,9 @@ const DynamicText = () => {
   return (
     <div className="dynamic-text">
         <TypeAnimation
-          sequence={["HTML & CSS ", 1500, "JAVASCRIPT ", 1500, "REACT ", 1500]}
+          sequence={["HTML & CSS ", 1500, "JAVASCRIPT ", 1500, "REACT ", 1500, "Responsive", 1500]}
           wrapper="span"
           speed={10}
-          style={{ display: "inline-block" }}
           repeat={Infinity}
         />
     </div>

@@ -11,7 +11,7 @@ const Buttons = (props) => {
           <NavLink
             to={props.left}
             className="left hover"
-            aria-label="Aller à la page précédante"
+            aria-label="Aller à la page précédente"
           >
             <FontAwesomeIcon icon={faChevronLeft} />
           </NavLink>

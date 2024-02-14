@@ -1,24 +1,36 @@
 .dynamic-text {
   display: flex;
   flex-direction: column;
-    animation: color 20s alternate infinite;
+  animation: color 20s alternate infinite;
 
-    span {
-      display: inline-block;
-      font-family: $font-2;
-        font-size: clamp(1rem, 0.6rem + 2vw, 3rem);
-        letter-spacing: 2px;
-    }
-  
+  span {
+    display: inline-block;
+    font-family: $font-2;
+    font-size: clamp(1rem, 0.6rem + 2vw, 3rem);
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 4px rgba(56, 56, 56, 0.6);
+  }
 }
 @keyframes color {
   0% {
-    color: blue;
+    color: #03045e;
+  }
+  10% {
+    color: #0077b6;
+  }
+  40% {
+    color: #00b4d8;
   }
   50% {
-    color: #ec006e;
+    color: #90e0ef;
+  }
+  60% {
+    color: #00b4d8;
+  }
+  90% {
+    color: #0077b6;
   }
   100% {
-    color: blue;
+    color: #03045e;
   }
 }
