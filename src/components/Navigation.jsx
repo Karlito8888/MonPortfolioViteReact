@@ -21,10 +21,10 @@ const Navigation = () => {
         <li className="nav-portfolio">
           portfolio
           <ul className="nav-projects">
-            {["SASS", "JS", "REACT", "Jeux"].map((project) => (
+            {["sass", "js", "react", "jeux"].map((project) => (
               <li key={project}>
                 <NavLink
-                  to={`/projet-${project}`}
+                  to={`/projets/${project}`}
                   className={({ isActive }) =>
                     isActive ? "nav-active hover" : "hover"
                   }

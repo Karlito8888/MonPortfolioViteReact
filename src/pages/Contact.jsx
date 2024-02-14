@@ -106,7 +106,7 @@ const Contact = () => {
           </div>
         </div>
         <SocialNetwork />
-        <Buttons left={"/projet-4"} />
+        <Buttons left={"/projets/jeux"} />
       </div>
     </main>
   );

@@ -79,6 +79,24 @@ a:visited {
   }
 }
 
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
 .navigation {
   position: absolute;
   overflow: visible;
@@ -670,9 +688,9 @@ a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .project:after {
   content: "";
@@ -702,21 +720,16 @@ a:visited {
 .project .project-main {
   position: relative;
   overflow: visible;
-  height: 80%;
+  height: 90%;
   width: calc(100% - clamp(2.5rem, 2.1111rem + 1.7778vw, 3.5rem));
   max-width: 900px;
   padding: 0 28px;
   display: grid;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  grid-template-columns: 33% 67%;
-  text-align: right;
   gap: 10px;
 }
 @media screen and (max-width: 768px) {
   .project .project-main {
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
@@ -733,8 +746,12 @@ a:visited {
 .project .project-main .project-content {
   width: 100%;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  justify-items: center;
   gap: 20px;
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
@@ -804,10 +821,7 @@ a:visited {
 .project .project-main .img-content {
   position: relative;
   text-align: left;
-  margin-left: 10px;
   width: 100%;
-  max-width: 600px;
-  aspect-ratio: 16/9;
 }
 @media screen and (min-width: 350px) and (orientation: portrait) {
   .project .project-main .img-content {
@@ -820,58 +834,45 @@ a:visited {
     margin: 0 auto;
   }
 }
-.project .project-main .img-content .img-container {
+.project .project-main .img-content .swiper {
+  height: 100%;
+  width: 40%;
+  padding: 0 0 30px 0;
+}
+.project .project-main .img-content .swiper .swiper-wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.project .project-main .img-content .swiper .swiper-wrapper .swiper-slide {
+  border-radius: 10px;
+}
+.project .project-main .img-content .swiper .swiper-wrapper .swiper-slide-active {
+  -webkit-box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.26);
+          box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.26);
+}
+.project .project-main .img-content .swiper .swiper-wrapper .swiper-slide-active .project-card {
+  height: 100%;
+  width: 100%;
+}
+.project .project-main .img-content .swiper .swiper-wrapper .swiper-slide-active .project-card .img-container {
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.26);
-          box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.26);
-  overflow: hidden;
-  position: relative;
 }
-.project .project-main .img-content .img-container:hover span,
-.project .project-main .img-content .img-container span:hover {
-  visibility: visible;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-.project .project-main .img-content .img-container span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  aspect-ratio: 16/9;
-  padding: 1rem;
-  margin: 0 auto;
-  text-align: left;
-  line-height: 18px;
-  font-size: clamp(0.8rem, 0.5278rem + 1.2444vw, 1.5rem);
-  visibility: hidden;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-transform: translateY(200px);
-          transform: translateY(200px);
-}
-.project .project-main .img-content .img-container span h3 {
-  padding-bottom: 10px;
-  color: rgb(2, 121, 148);
-}
-.project .project-main .img-content .img-container img {
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0%;
-     object-position: 0%;
+.project .project-main .img-content .swiper .swiper-wrapper .swiper-slide-active .project-card .img-container img {
+  -o-object-fit: fill;
+     object-fit: fill;
   width: 100%;
   height: 100%;
-  position: absolute;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
-  position: relative;
-}
-.project .project-main .img-content .img-container img:hover,
-.project .project-main .img-content .img-container img span:hover img {
-  -webkit-filter: opacity(15%) contrast(150%);
-          filter: opacity(15%) contrast(150%);
 }
 .project .button-container {
   width: 130px;

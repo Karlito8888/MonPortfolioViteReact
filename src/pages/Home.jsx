@@ -24,7 +24,7 @@ const Home = () => {
             <DynamicText />
           </div>
         </div>
-        <Buttons right={"/projet-SASS"} />
+        <Buttons right={"/projets/sass"} />
       </div>
     </>
   );
