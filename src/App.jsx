@@ -4,7 +4,10 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import { AnimatePresence } from "framer-motion";
-import Projects from "./components/Projects";
+import ProjectsSass from "./pages/ProjectsSass";
+import ProjectsJS from "./pages/ProjectsJS";
+import ProjectsReact from "./pages/ProjectsReact";
+import ProjectsGames from "./pages/ProjectsGames";
 
 function App() {
   return (
@@ -12,7 +15,10 @@ function App() {
       <AnimatePresence>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projets/:type" element={<Projects />} />
+          <Route path="/projects/sass" element={<ProjectsSass />} />
+          <Route path="/projects/js" element={<ProjectsJS />} />
+          <Route path="/projects/react" element={<ProjectsReact />} />
+          <Route path="/projects/games" element={<ProjectsGames />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

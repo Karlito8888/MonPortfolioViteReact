@@ -141,7 +141,7 @@ export const projectsData = {
       link: "http://www.google.com",
     },
   ],
-  jeux: [
+  games: [
     {
       id: 1,
       title: "Casta",

@@ -1,13 +1,11 @@
-import React from "react";
+import React from 'react';
 import Buttons from "../components/Buttons";
-import DynamicText from "../components/DynamicText";
 import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import Logo from "../components/Logo";
 import SocialNetwork from "../components/SocialNetwork";
 
-const Home = () => {
-
+const ProjectsGames = () => {
   return (
     <>
       <Mouse />
@@ -15,17 +13,11 @@ const Home = () => {
           <Navigation />
           <SocialNetwork />
           <Logo />
-        <div className="home-main">
-          <div className="main-content">
-            <h1>Charles BOURGAULT</h1>
-            <h2>Intégrateur Web</h2>
-            <DynamicText />
-          </div>
-        </div>
-        <Buttons right={"/projects/sass"} />
+        Hello games
+        <Buttons left="/projects/react" right="/contact" />
       </div>
     </>
   );
 };
 
-export default Home;
+export default ProjectsGames;

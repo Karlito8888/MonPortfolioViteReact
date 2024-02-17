@@ -20,6 +20,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.15.8",
     "@mui/material": "^5.15.7",
+    "carousel": "^0.0.3",
     "framer-motion": "^11.0.3",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
@@ -41,6 +42,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "vite-plugin-compression": "^0.5.1"
   }
 }
