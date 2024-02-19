@@ -1,5 +1,5 @@
 import gamingCampusImage from "../assets/images/projets-sass/gaming-campus.webp";
-import heliumImage from "../assets/images/projets-sass/helium.png";
+import heliumImage from "../assets/images/projets-sass/helium.webp";
 import runImage from "../assets/images/projets-sass/run.webp";
 import lamontagneImage from "../assets/images/projets-sass/la-montagne.webp";
 import lerestoImage from "../assets/images/projets-sass/le-resto.webp";

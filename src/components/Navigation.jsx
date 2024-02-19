@@ -19,7 +19,7 @@ const Navigation = () => {
 
         {/* Portfolio avec sous-menu */}
         <li className="nav-portfolio">
-          portfolio
+          projets
           <ul className="nav-projects">
             {["sass", "js", "react", "games"].map((project) => (
               <li key={project}>
@@ -29,7 +29,7 @@ const Navigation = () => {
                     isActive ? "nav-active hover" : "hover"
                   }
                 >
-                  <span>projets&nbsp;</span>
+                  {/* <span>projets&nbsp;</span> */}
                   <span>{project}</span>
                 </NavLink>
               </li>

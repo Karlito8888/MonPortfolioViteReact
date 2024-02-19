@@ -3,14 +3,16 @@
   width: 100vw;
   position: relative;
   overflow: visible;
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
 
   &:after {
     content: "";
+    position: absolute;
     height: 800px;
     width: 800px;
     background: $color-3;
     border-radius: 50%;
-    position: absolute;
     bottom: -480px;
     right: 0px;
     z-index: -2;
@@ -37,20 +39,17 @@
     }
   }
 
-  header {
-    width: 100%;
-    height: auto;
-  }
-
   .home-main {
-    display: grid;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
     height: 100%;
+    overflow: visible;
 
     .main-content {
       user-select: none;
       overflow: visible;
+      display: grid;
 
       h1 {
         font-size: clamp(1rem, 0.19999999999999996rem + 4vw, 5rem);
@@ -95,4 +94,5 @@
       }
     }
   }
+  
 }

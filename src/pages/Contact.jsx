@@ -3,7 +3,6 @@ import ContactForm from "../components/ContactForm";
 import Logo from "../components/Logo";
 import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
-import Buttons from "../components/Buttons";
 import SocialNetwork from "../components/SocialNetwork";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";

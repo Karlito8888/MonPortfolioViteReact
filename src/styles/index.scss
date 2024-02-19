@@ -1,5 +1,8 @@
 @import "./settings";
 @import "./components/navigation";
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
 @import "./pages/home";
 @import "./components/socialNetwork";
 @import "./components/buttons";
@@ -9,3 +12,4 @@
 @import "./pages/notFound";
 @import "./components/mouse";
 @import "./components/dynamicText";
+@import "./pages/projetsSass";

@@ -1,7 +1,11 @@
 import React from "react";
 
 const Logo = () => {
-  return <span className="logo">CB</span>;
+  return (
+    <div className="logo-container">
+      <span className="logo">CB</span>
+    </div>
+  );
 };
 
 export default Logo;

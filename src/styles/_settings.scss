@@ -34,20 +34,22 @@ $red: rgb(253, 87, 87);
 }
 html,
 body,
-#root, main, .home {
-height: 100%;
+#root,
+main,
+.home {
+  height: 100%;
   max-height: 100vh;
   width: 100%;
   max-width: 100vw;
 }
 
-html { 
+html {
   scroll-behavior: unset;
 }
 
 body {
   font-family: $font-1;
-  font-size: 16px;  
+  font-size: 16px;
   background-color: $color-1;
   color: $black;
   letter-spacing: 1px;
@@ -82,20 +84,44 @@ a:visited {
   }
 }
 
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+.scroll-left,
+.scroll-right {
+  display: flex;
+  align-items: center;
+
+  a {
+    font-size: clamp(2rem, 1.6666666666666667rem + 1.6666666666666667vw, 3rem);
+    color: $color-4;
+    transition: 0.25s;
+    user-select: none;
+
+    &:hover {
+      font-size: clamp(2.5rem, 2.1111rem + 1.7778vw, 3.5rem);
+    }
+  }
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+.scroll-left {
+  justify-content: flex-end;
+}
+.scroll-right {
+  justify-content: flex-start;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
+// .swiper {
+//   width: 100%;
+//   padding-top: 50px;
+//   padding-bottom: 50px;
+// }
+
+// .swiper-slide {
+//   background-position: center;
+//   background-size: cover;
+//   width: 300px;
+//   height: 300px;
+// }
+
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+// }
