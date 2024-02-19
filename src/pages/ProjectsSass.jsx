@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import Logo from "../components/Logo";
@@ -9,46 +9,23 @@ import "react-multi-carousel/lib/styles.css";
 import ProjectCardCarousel from "../components/ProjectCardCarousel";
 import ButtonRight from "../components/ButtonRight";
 import ButtonLeft from "../components/ButtonLeft";
+import responsive from "../utils/responsiveSettings";
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 2,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 2,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
-
- const ProjectsSass = () => {
-
-   const firstSassProject = projectsData.sass[0];
-   const secondSassProject = projectsData.sass[1];
-   const thirdSassProject = projectsData.sass[2];
-const fourthSassProject = projectsData.sass[3];
-   const fifthSassProject = projectsData.sass[4];
-
-   const backgroundStyle = {
-     backgroundSize: "contain", // Couvre toute la zone de l'élément
-     backgroundPosition: "center", // Centre l'image dans l'élément
-     backgroundRepeat: "no-repeat", 
-     height: "300px", // Hauteur fixe pour l'élément, ajustez selon vos besoins
-     width: "100%", // Largeur de l'élément (peut être ajustée selon vos besoins)
-     display: "flex", // Pour centrer le contenu dans l'élément, si nécessaire
-     justifyContent: "center", // Centre horizontalement le contenu
-     alignItems: "center", // Centre verticalement le contenu
-     color: "white", // Couleur du texte pour contraster avec le fond, si vous avez du texte
-   };
+const ProjectsSass = () => {
+  const backgroundStyle = {
+    backgroundSize: "cover", // Couvre toute la zone de l'élément
+    backgroundPosition: "center", // Centre l'image dans l'élément
+    backgroundRepeat: "no-repeat",
+    height: "auto", // Hauteur fixe pour l'élément, ajustez selon vos besoins
+    width: "100%", // Largeur de l'élément (peut être ajustée selon vos besoins)
+    maxWidth: "700px",
+    aspectRatio: "16/9",
+    borderRadius: "10px",
+    display: "flex", // Pour centrer le contenu dans l'élément, si nécessaire
+    justifyContent: "center", // Centre horizontalement le contenu
+    alignItems: "center", // Centre verticalement le contenu
+    color: "#e2e2e2", // Couleur du texte pour contraster avec le fond, si vous avez du texte
+  };
 
   return (
     <>
@@ -88,76 +65,21 @@ const fourthSassProject = projectsData.sass[3];
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
               >
-                <div
-                  style={{
-                    ...backgroundStyle,
-                    backgroundImage: `url(${firstSassProject.img})`,
-                  }}
-                >
-                  <h2>{firstSassProject.title}</h2>
-
-                  <div className="description">
-                    <h3>{firstSassProject.date}</h3>
-                    <p>{firstSassProject.infos}</p>
-                    <a href={firstSassProject.link}>En savoir plus</a>
-                  </div>
-                </div>
-                <div
-                  style={{
-                    ...backgroundStyle,
-                    backgroundImage: `url(${secondSassProject.img})`,
-                  }}
-                >
-                  <h2>{secondSassProject.title}</h2>
-
-                  <div className="description">
-                    <h3>{secondSassProject.date}</h3>
-                    <p>{secondSassProject.infos}</p>
-                    <a href={secondSassProject.link}>En savoir plus</a>
-                  </div>
-                </div>
-                <div
-                  style={{
-                    ...backgroundStyle,
-                    backgroundImage: `url(${thirdSassProject.img})`,
-                  }}
-                >
-                  <h2>{thirdSassProject.title}</h2>
-
-                  <div className="description">
-                    <h3>{thirdSassProject.date}</h3>
-                    <p>{thirdSassProject.infos}</p>
-                    <a href={thirdSassProject.link}>En savoir plus</a>
-                  </div>
-                </div>
-                <div
-                  style={{
-                    ...backgroundStyle,
-                    backgroundImage: `url(${fourthSassProject.img})`,
-                  }}
-                >
-                  <h2>{fourthSassProject.title}</h2>
-
-                  <div className="description">
-                    <h3>{fourthSassProject.date}</h3>
-                    <p>{fourthSassProject.infos}</p>
-                    <a href={fourthSassProject.link}>En savoir plus</a>
-                  </div>
-                </div>
-                <div
-                  style={{
-                    ...backgroundStyle,
-                    backgroundImage: `url(${fifthSassProject.img})`,
-                  }}
-                >
-                  <h2>{fifthSassProject.title}</h2>
-
-                  <div className="description">
-                    <h3>{fifthSassProject.date}</h3>
-                    <p>{fifthSassProject.infos}</p>
-                    <a href={fifthSassProject.link}>En savoir plus</a>
-                  </div>
-                </div>
+                {projectsData.sass.map((project) => (
+                  <React.Fragment key={project.id}>
+                    <h2>{project.title}</h2>
+                    <ProjectCardCarousel
+                      style={{
+                        ...backgroundStyle,
+                        backgroundImage: `url(${project.img})`,
+                      }}
+                      // title={project.title}
+                      date={project.date}
+                      infos={project.infos}
+                      link={project.link}
+                    />
+                  </React.Fragment>
+                ))}
               </Carousel>
             </section>
           </div>

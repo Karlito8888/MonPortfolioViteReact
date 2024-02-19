@@ -39,7 +39,7 @@ const ProjectsJS = () => {
           <SocialNetwork />
           <Logo />
         Hello JS
-        <Buttons left="/projects/sass" right="/projects/react" />
+       
       </div>
     </>
   );
