@@ -875,11 +875,15 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-.projects_sass #projects-sass-menu .carousel-container {
+.projects_sass #projects-sass-menu div {
   height: 100%;
   width: 100%;
 }
-.projects_sass #projects-sass-menu .carousel-container h2 {
+.projects_sass #projects-sass-menu div .carousel-container {
+  height: 100%;
+  width: 100%;
+}
+.projects_sass #projects-sass-menu div .carousel-container h2 {
   font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
   margin-bottom: 12px;
   font-family: "font-2", serif;
@@ -903,29 +907,45 @@ main {
             transform: scaleX(1);
   }
 }
-.projects_sass #projects-sass-menu .carousel-container .card {
+.projects_sass #projects-sass-menu div .carousel-container .card {
   position: relative;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
-.projects_sass #projects-sass-menu .carousel-container .card:hover .description {
-  opacity: 1;
+.projects_sass #projects-sass-menu div .carousel-container .card:hover span,
+.projects_sass #projects-sass-menu div .carousel-container .card span:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
-.projects_sass #projects-sass-menu .carousel-container .card .description {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+.projects_sass #projects-sass-menu div .carousel-container .card span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+  line-height: 120%;
+  font-size: 1.5rem;
+  visibility: hidden;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transform: translateY(300px);
+          transform: translateY(300px);
 }
-.projects_sass #projects-sass-menu .carousel-container .card .description h3 {
+.projects_sass #projects-sass-menu div .carousel-container .card span h3 {
   padding-bottom: 10px;
   color: rgb(2, 121, 148);
 }
-.projects_sass #projects-sass-menu .carousel-container .card .description p {
+.projects_sass #projects-sass-menu div .carousel-container .card span p {
   margin-bottom: 30px;
-  color: rgb(141, 141, 141);
+  color: rgb(40, 40, 40);
   font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
 }
-.projects_sass #projects-sass-menu .carousel-container .card .description a {
+.projects_sass #projects-sass-menu div .carousel-container .card span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,14 +958,21 @@ main {
   color: #fafeff;
   background: #00c1ec;
   width: 130px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
 }
 @media screen and (max-width: 410px) {
-  .projects_sass #projects-sass-menu .carousel-container .card .description a {
+  .projects_sass #projects-sass-menu div .carousel-container .card span a {
     width: 100px;
-    font-size: 0.85rem;
   }
 }
-.projects_sass #projects-sass-menu .carousel-container .card .description a:hover {
+.projects_sass #projects-sass-menu div .carousel-container .card span a:hover {
   color: #00c1ec;
   background: #e7f7fe;
+}
+.projects_sass #projects-sass-menu div .carousel-container .custom-dot-list-style {
+  width: 200px;
+  margin: 0 auto;
+  gap: 15px;
 }/*# sourceMappingURL=index.css.map */

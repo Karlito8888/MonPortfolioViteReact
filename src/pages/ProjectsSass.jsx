@@ -10,8 +10,23 @@ import ProjectCardCarousel from "../components/ProjectCardCarousel";
 import ButtonRight from "../components/ButtonRight";
 import ButtonLeft from "../components/ButtonLeft";
 import responsive from "../utils/responsiveSettings";
+import { motion } from "framer-motion";
 
 const ProjectsSass = () => {
+
+const imgAnim = {
+  initial: {
+    opacity: 0,
+    x: Math.floor(Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1)),
+    y: Math.floor(Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1)),
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+  },
+};
+
   const backgroundStyle = {
     backgroundSize: "cover", // Couvre toute la zone de l'élément
     backgroundPosition: "center", // Centre l'image dans l'élément
@@ -46,41 +61,48 @@ const ProjectsSass = () => {
           </div>
           <div className="projects_sass">
             <section id="projects-sass-menu">
-              <Carousel
-                swipeable={true}
-                draggable={false}
-                showDots={true}
-                responsive={responsive}
-                focusOnSelect={true}
-                keyBoardControl={true}
-                customTransition="all .5"
-                transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={[
-                  "superLargeDesktop",
-                  "desktop",
-                  "tablet",
-                  "mobile",
-                ]}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
+              <motion.div
+                initial="initial"
+                animate="visible"
+                variants={imgAnim}
+                transition={{ duration: 1.2 }}
               >
-                {projectsData.sass.map((project) => (
-                  <React.Fragment key={project.id}>
-                    <h2>{project.title}</h2>
-                    <ProjectCardCarousel
-                      style={{
-                        ...backgroundStyle,
-                        backgroundImage: `url(${project.img})`,
-                      }}
-                      // title={project.title}
-                      date={project.date}
-                      infos={project.infos}
-                      link={project.link}
-                    />
-                  </React.Fragment>
-                ))}
-              </Carousel>
+                <Carousel
+                  swipeable={true}
+                  draggable={false}
+                  showDots={true}
+                  responsive={responsive}
+                  focusOnSelect={true}
+                  keyBoardControl={true}
+                  customTransition="all .5"
+                  transitionDuration={500}
+                  containerClass="carousel-container"
+                  removeArrowOnDeviceType={[
+                    "superLargeDesktop",
+                    "desktop",
+                    "tablet",
+                    "mobile",
+                  ]}
+                  dotListClass="custom-dot-list-style"
+                  itemClass="carousel-item-padding-40-px"
+                >
+                  {projectsData.sass.map((project) => (
+                    <React.Fragment key={project.id}>
+                      <h2>{project.title}</h2>
+                      <ProjectCardCarousel
+                        style={{
+                          ...backgroundStyle,
+                          backgroundImage: `url(${project.img})`,
+                        }}
+                        // title={project.title}
+                        date={project.date}
+                        infos={project.infos}
+                        link={project.link}
+                      />
+                    </React.Fragment>
+                  ))}
+                </Carousel>
+              </motion.div>
             </section>
           </div>
           <div className="scroll-right">
