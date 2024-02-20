@@ -11,6 +11,8 @@ import ButtonRight from "../components/ButtonRight";
 import ButtonLeft from "../components/ButtonLeft";
 import responsive from "../utils/responsiveSettings";
 import { motion } from "framer-motion";
+import { faJs, faJsSquare } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProjectsJS = () => {
 
@@ -87,7 +89,13 @@ return (
               >
                 {projectsData.js.map((project) => (
                   <React.Fragment key={project.id}>
-                    <h2>{project.title}</h2>
+                    <div className="en-tete">
+                      <h2>{project.title}</h2>
+                      <FontAwesomeIcon
+                        icon={faJsSquare}
+                        style={{ color: "#E8D44D" }}
+                      />
+                    </div>
                     <ProjectCardCarousel
                       style={{
                         ...backgroundStyle,

@@ -1,11 +1,11 @@
-.projects_sass {
+.projects_react {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  #projects-sass-menu {
+  #projects-react-menu {
     height: 100%;
     width: 90%;
     max-width: 700px;
@@ -36,6 +36,7 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
+
               h2 {
                 font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
                 margin-bottom: 12px;
@@ -46,7 +47,7 @@
                 transform-origin: 150%;
 
                 @media screen and (max-width: 999px) and (orientation: landscape) {
-                  font-size: 1.1rem;
+                  font-size: 1.2rem;
                 }
 
                 @keyframes transformTitle {
@@ -55,13 +56,14 @@
                   }
                 }
               }
+
               svg {
                 font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
                 margin-bottom: 12px;
-                
-                  @media screen and (max-width: 999px) and (orientation: landscape) {
-                    font-size: 1.2rem;
-                  }
+
+                @media screen and (max-width: 999px) and (orientation: landscape) {
+                  font-size: 1.2rem;
+                }
               }
             }
 
@@ -72,15 +74,14 @@
 
               &:hover span,
               span:hover {
-                background-image: linear-gradient(
-                  to top,
-                  rgba(255, 255, 255, 1) 0%,
-                  rgba(255, 255, 255, 0.9) 60%,
-                  rgba(255, 255, 255, 0) 100%
-                );
+                background-image: linear-gradient(to top,
+                    rgba(255, 255, 255, 1) 0%,
+                    rgba(255, 255, 255, 0.9) 60%,
+                    rgba(255, 255, 255, 0) 100%);
                 visibility: visible;
                 transform: translateY(0);
               }
+
               span {
                 position: absolute;
                 bottom: 0;
@@ -93,15 +94,18 @@
                 visibility: hidden;
                 transition: 0.5s ease;
                 transform: translateY(300px);
+
                 h3 {
                   padding-bottom: 10px;
                   color: rgb(2, 121, 148);
                 }
+
                 p {
                   margin-bottom: 30px;
                   color: $black;
                   font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
                 }
+
                 a {
                   display: flex;
                   align-items: center;
@@ -124,6 +128,7 @@
                 }
               }
             }
+
             .custom-dot-list-style {
               display: flex;
               align-items: center;

@@ -48,24 +48,8 @@ const Contact = () => {
           <div className="scroll-left">
             <ButtonLeft to="/projects/react" />
           </div>
-          <div className="contact-infos">
-            {isMobileView ? (
-              <Carousel
-                swipeable={false}
-                draggable={false}
-                showDots={true}
-                responsive={responsive}
-                infinite={true}
-                autoPlay={false}
-                autoPlaySpeed={4000}
-                keyBoardControl={true}
-                customTransition="all 1s"
-                transitionDuration={1000}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
-              >
+          <ContactForm />
+          <div className="contact-infos">    
                 <ContactInfoItem
                   title="adresse"
                   text={[
@@ -85,32 +69,7 @@ const Contact = () => {
                   title="email"
                   text="cb.dweb49@gmail.com"
                   copyText="cb.dweb49@gmail.com"
-                />
-              </Carousel>
-            ) : (
-              <>
-                <ContactInfoItem
-                  title="adresse"
-                  text={[
-                    "Charles BOURGAULT (E.I.)",
-                    "10, rue du Colisée",
-                    "75008 Paris",
-                  ]}
-                  copyText="Charles BOURGAULT (E.I), 10, rue du Colisée, 75008 Paris"
-                />
-                <ContactInfoItem
-                  title="téléphone"
-                  text=" 06.42.66.33.00"
-                  copyText="+33642663300"
-                  icon={faWhatsapp}
-                />
-                <ContactInfoItem
-                  title="email"
-                  text="cb.dweb49@gmail.com"
-                  copyText="cb.dweb49@gmail.com"
-                />
-              </>
-            )}
+                />    
           </div>
           <div className="scroll-right">
           </div>

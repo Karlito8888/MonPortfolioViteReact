@@ -50,10 +50,6 @@ body {
   letter-spacing: 1px;
 }
 
-main {
-  position: relative;
-}
-
 a,
 a:visited {
   color: rgb(141, 141, 141);
@@ -261,9 +257,23 @@ header .sn-logo {
 }
 
 main {
+  position: relative;
   display: grid;
   grid-template-columns: 50px 1fr 50px;
   overflow: visible;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin: 0 1rem 1rem 0;
 }
 
 .home {
@@ -407,28 +417,20 @@ main {
 }
 
 .contact {
-  position: absolute;
-  overflow: visible;
-  width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10%;
+  width: 100vw;
+  position: relative;
+  overflow: visible;
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
 }
 .contact:after {
   content: "";
+  position: absolute;
   height: 700px;
   width: 700px;
   background: #e7f7fe;
   border-radius: 50%;
-  position: absolute;
   top: 150px;
   right: -460px;
   z-index: -10;
@@ -463,33 +465,53 @@ main {
             transform: scale(1);
   }
 }
-@media screen and (max-width: 768px) {
-  .contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    gap: 0;
+.contact main {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 50px;
+  overflow: visible;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .contact main {
+    grid-template-columns: 50px 1fr 50px;
   }
 }
-.contact .form-container {
-  position: relative;
+@media screen and (max-width: 700px) {
+  .contact main {
+    grid-template-columns: 50px 1fr 50px;
+  }
+}
+.contact main .form-container {
   max-width: 300px;
+  overflow: visible;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@media screen and (max-width: 480px) {
-  .contact .form-container {
-    padding-top: 30px;
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .contact main .form-container {
+    display: none;
   }
 }
-.contact .form-container h2 {
+@media screen and (max-width: 700px) {
+  .contact main .form-container {
+    display: none;
+  }
+}
+.contact main .form-container h2 {
+  position: relative;
   font-size: clamp(1.2rem, 1.0833rem + 0.5333vw, 1.5rem);
   margin-bottom: 50px;
   overflow: visible;
 }
-.contact .form-container h2:after {
+.contact main .form-container h2:after {
   content: "";
   height: 70px;
   width: 70px;
@@ -501,32 +523,32 @@ main {
   z-index: -1;
 }
 @media screen and (max-width: 480px) {
-  .contact .form-container h2:after {
+  .contact main .form-container h2:after {
     top: 22px;
     right: -63px;
   }
 }
-.contact .form-container .form-content {
+.contact main .form-container .form-content {
   display: grid;
 }
-.contact .form-container .form-content input,
-.contact .form-container .form-content textarea {
+.contact main .form-container .form-content input,
+.contact main .form-container .form-content textarea {
   background: none;
   font-family: "font-1", sans-serif;
   font-size: clamp(1.2rem, 1.0833rem + 0.5333vw, 1.5rem);
   border-bottom: 1px solid #00c1ec;
   border-radius: 5px;
 }
-.contact .form-container .form-content input {
+.contact main .form-container .form-content input {
   padding: 10px 6px;
   margin-bottom: 30px;
 }
-.contact .form-container .form-content textarea {
+.contact main .form-container .form-content textarea {
   resize: none;
   padding: 6px 0;
   height: 70px;
 }
-.contact .form-container .form-content input.button {
+.contact main .form-container .form-content input.button {
   background: #e7f7fe;
   height: 55px;
   width: 126px;
@@ -538,124 +560,64 @@ main {
   transition: 0.3s;
   border: none;
 }
-@media screen and (max-width: 916px) and (orientation: landscape) {
-  .contact .form-container h2 {
-    font-size: clamp(1.2rem, 1.0833rem + 0.5333vw, 1.5rem);
-    margin-bottom: 0px;
-  }
-  .contact .form-container input {
-    padding: 6px;
-    margin-bottom: 10px;
-  }
-  .contact .form-container textarea {
-    resize: none;
-    padding: 6px 0;
-    height: 30px;
+.contact main .contact-infos {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .contact main .contact-infos {
+    text-align: center;
   }
 }
-.contact .contact-infos {
-  position: relative;
-  height: 440px;
-  width: 350px;
-}
-@media screen and (max-width: 768px) {
-  .contact .contact-infos {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
-  }
-  .contact .contact-infos .react-multi-carousel-list {
-    height: 140%;
-  }
-  .contact .contact-infos .react-multi-carousel-list .react-multi-carousel-dot-list {
-    gap: 15px;
+@media screen and (max-width: 700px) {
+  .contact main .contact-infos {
+    text-align: center;
   }
 }
-@media screen and (max-width: 480px) {
-  .contact .contact-infos {
-    display: none;
-  }
-}
-@media screen and (max-width: 916px) and (orientation: landscape) {
-  .contact .contact-infos {
-    display: none;
-  }
-}
-.contact .contact-infos h4 {
+.contact main .contact-infos h4 {
   color: rgb(141, 141, 141);
   font-size: clamp(1.3rem, 1.1056rem + 0.8889vw, 1.8rem);
   font-weight: 200;
   margin-bottom: 10px;
 }
-.contact .contact-infos p {
+.contact main .contact-infos p {
   font-size: 1rem;
   letter-spacing: 2px;
   line-height: 130%;
 }
-.contact .contact-infos .content-téléphone,
-.contact .contact-infos .content-email,
-.contact .contact-infos .content-adresse {
-  position: absolute;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: auto;
-}
-.contact .contact-infos .content-téléphone:hover,
-.contact .contact-infos .content-email:hover,
-.contact .contact-infos .content-adresse:hover {
+.contact main .contact-infos .content-téléphone:hover,
+.contact main .contact-infos .content-email:hover,
+.contact main .contact-infos .content-adresse:hover {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
 }
 @media screen and (max-width: 768px) {
-  .contact .contact-infos .content-téléphone,
-  .contact .contact-infos .content-email,
-  .contact .contact-infos .content-adresse {
-    position: static;
-    line-height: 130%;
-  }
-}
-.contact .contact-infos .content-adresse {
-  top: 11px;
-  right: 0px;
-}
-@media screen and (max-width: 768px) {
-  .contact .contact-infos .content-adresse {
+  .contact main .contact-infos .content-adresse {
     text-align: center;
     font-size: 0.8rem;
   }
 }
-.contact .contact-infos .content-téléphone {
-  top: 35%;
-  left: 18%;
-}
 @media screen and (max-width: 768px) {
-  .contact .contact-infos .content-téléphone {
+  .contact main .contact-infos .content-téléphone {
     text-align: center;
     font-size: 0.8rem;
   }
 }
-.contact .contact-infos .content-email {
-  top: 65%;
-}
 @media screen and (max-width: 768px) {
-  .contact .contact-infos .content-email {
+  .contact main .contact-infos .content-email {
     font-size: 0.8rem;
     text-align: center;
   }
-}
-.contact .contact-infos .credits {
-  position: absolute;
-  bottom: 5px;
-  right: 0;
-}
-@media screen and (max-width: 768px) {
-  .contact .contact-infos .credits {
-    position: static;
-    text-align: right;
-  }
-}
-.contact .contact-infos .credits p {
-  font-size: 0.9rem;
 }
 
 .logo-container {
@@ -919,7 +881,7 @@ main {
 }
 @media screen and (max-width: 999px) and (orientation: landscape) {
   .projects_sass #projects-sass-menu div .carousel-container ul li .en-tete h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 @-webkit-keyframes transformTitle {
@@ -1008,6 +970,507 @@ main {
   background: #e7f7fe;
 }
 .projects_sass #projects-sass-menu div .carousel-container ul li .custom-dot-list-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.projects_js {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects_js #projects-js-menu {
+  height: 100%;
+  width: 90%;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_js #projects-js-menu {
+    width: 60%;
+    max-width: 300px;
+  }
+}
+.projects_js #projects-js-menu div {
+  height: 100%;
+  width: 100%;
+}
+.projects_js #projects-js-menu div .carousel-container {
+  height: 100%;
+  width: 100%;
+}
+.projects_js #projects-js-menu div .carousel-container ul li {
+  padding: 0 20px;
+}
+.projects_js #projects-js-menu div .carousel-container ul li .en-tete {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects_js #projects-js-menu div .carousel-container ul li .en-tete h2 {
+  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
+  margin-bottom: 12px;
+  font-family: "font-2", serif;
+  color: #00c1ec;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: transformTitle 1.5s ease forwards;
+          animation: transformTitle 1.5s ease forwards;
+  -webkit-transform-origin: 150%;
+          transform-origin: 150%;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_js #projects-js-menu div .carousel-container ul li .en-tete h2 {
+    font-size: 1.2rem;
+  }
+}
+@keyframes transformTitle {
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+.projects_js #projects-js-menu div .carousel-container ul li .en-tete svg {
+  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_js #projects-js-menu div .carousel-container ul li .en-tete svg {
+    font-size: 1.2rem;
+  }
+}
+.projects_js #projects-js-menu div .carousel-container ul li .card {
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.projects_js #projects-js-menu div .carousel-container ul li .card:hover span,
+.projects_js #projects-js-menu div .carousel-container ul li .card span:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.projects_js #projects-js-menu div .carousel-container ul li .card span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+  line-height: 120%;
+  font-size: 1.5rem;
+  visibility: hidden;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transform: translateY(300px);
+          transform: translateY(300px);
+}
+.projects_js #projects-js-menu div .carousel-container ul li .card span h3 {
+  padding-bottom: 10px;
+  color: rgb(2, 121, 148);
+}
+.projects_js #projects-js-menu div .carousel-container ul li .card span p {
+  margin-bottom: 30px;
+  color: rgb(40, 40, 40);
+  font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
+}
+.projects_js #projects-js-menu div .carousel-container ul li .card span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fafeff;
+  background: #00c1ec;
+  width: 130px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 410px) {
+  .projects_js #projects-js-menu div .carousel-container ul li .card span a {
+    width: 100px;
+  }
+}
+.projects_js #projects-js-menu div .carousel-container ul li .card span a:hover {
+  color: #00c1ec;
+  background: #e7f7fe;
+}
+.projects_js #projects-js-menu div .carousel-container ul li .custom-dot-list-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.projects_react {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects_react #projects-react-menu {
+  height: 100%;
+  width: 90%;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_react #projects-react-menu {
+    width: 60%;
+    max-width: 300px;
+  }
+}
+.projects_react #projects-react-menu div {
+  height: 100%;
+  width: 100%;
+}
+.projects_react #projects-react-menu div .carousel-container {
+  height: 100%;
+  width: 100%;
+}
+.projects_react #projects-react-menu div .carousel-container ul li {
+  padding: 0 20px;
+}
+.projects_react #projects-react-menu div .carousel-container ul li .en-tete {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects_react #projects-react-menu div .carousel-container ul li .en-tete h2 {
+  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
+  margin-bottom: 12px;
+  font-family: "font-2", serif;
+  color: #00c1ec;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: transformTitle 1.5s ease forwards;
+          animation: transformTitle 1.5s ease forwards;
+  -webkit-transform-origin: 150%;
+          transform-origin: 150%;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_react #projects-react-menu div .carousel-container ul li .en-tete h2 {
+    font-size: 1.2rem;
+  }
+}
+@keyframes transformTitle {
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+.projects_react #projects-react-menu div .carousel-container ul li .en-tete svg {
+  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_react #projects-react-menu div .carousel-container ul li .en-tete svg {
+    font-size: 1.2rem;
+  }
+}
+.projects_react #projects-react-menu div .carousel-container ul li .card {
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.projects_react #projects-react-menu div .carousel-container ul li .card:hover span,
+.projects_react #projects-react-menu div .carousel-container ul li .card span:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.projects_react #projects-react-menu div .carousel-container ul li .card span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+  line-height: 120%;
+  font-size: 1.5rem;
+  visibility: hidden;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transform: translateY(300px);
+          transform: translateY(300px);
+}
+.projects_react #projects-react-menu div .carousel-container ul li .card span h3 {
+  padding-bottom: 10px;
+  color: rgb(2, 121, 148);
+}
+.projects_react #projects-react-menu div .carousel-container ul li .card span p {
+  margin-bottom: 30px;
+  color: rgb(40, 40, 40);
+  font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
+}
+.projects_react #projects-react-menu div .carousel-container ul li .card span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fafeff;
+  background: #00c1ec;
+  width: 130px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 410px) {
+  .projects_react #projects-react-menu div .carousel-container ul li .card span a {
+    width: 100px;
+  }
+}
+.projects_react #projects-react-menu div .carousel-container ul li .card span a:hover {
+  color: #00c1ec;
+  background: #e7f7fe;
+}
+.projects_react #projects-react-menu div .carousel-container ul li .custom-dot-list-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.projects_games {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects_games #projects-games-menu {
+  height: 100%;
+  width: 90%;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_games #projects-games-menu {
+    width: 60%;
+    max-width: 300px;
+  }
+}
+.projects_games #projects-games-menu div {
+  height: 100%;
+  width: 100%;
+}
+.projects_games #projects-games-menu div .carousel-container {
+  height: 100%;
+  width: 100%;
+}
+.projects_games #projects-games-menu div .carousel-container ul li {
+  padding: 0 20px;
+}
+.projects_games #projects-games-menu div .carousel-container ul li .en-tete {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects_games #projects-games-menu div .carousel-container ul li .en-tete h2 {
+  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
+  margin-bottom: 12px;
+  font-family: "font-2", serif;
+  color: #00c1ec;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: transformTitle 1.5s ease forwards;
+          animation: transformTitle 1.5s ease forwards;
+  -webkit-transform-origin: 150%;
+          transform-origin: 150%;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_games #projects-games-menu div .carousel-container ul li .en-tete h2 {
+    font-size: 1.2rem;
+  }
+}
+@keyframes transformTitle {
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+.projects_games #projects-games-menu div .carousel-container ul li .en-tete svg {
+  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_games #projects-games-menu div .carousel-container ul li .en-tete svg {
+    font-size: 1.2rem;
+  }
+}
+.projects_games #projects-games-menu div .carousel-container ul li .card {
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.projects_games #projects-games-menu div .carousel-container ul li .card:hover span,
+.projects_games #projects-games-menu div .carousel-container ul li .card span:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.projects_games #projects-games-menu div .carousel-container ul li .card span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+  line-height: 120%;
+  font-size: 1.5rem;
+  visibility: hidden;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transform: translateY(300px);
+          transform: translateY(300px);
+}
+.projects_games #projects-games-menu div .carousel-container ul li .card span h3 {
+  padding-bottom: 10px;
+  color: rgb(2, 121, 148);
+}
+.projects_games #projects-games-menu div .carousel-container ul li .card span p {
+  margin-bottom: 30px;
+  color: rgb(40, 40, 40);
+  font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
+}
+.projects_games #projects-games-menu div .carousel-container ul li .card span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fafeff;
+  background: #00c1ec;
+  width: 130px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 410px) {
+  .projects_games #projects-games-menu div .carousel-container ul li .card span a {
+    width: 100px;
+  }
+}
+.projects_games #projects-games-menu div .carousel-container ul li .card span a:hover {
+  color: #00c1ec;
+  background: #e7f7fe;
+}
+.projects_games #projects-games-menu div .carousel-container ul li .custom-dot-list-style {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
