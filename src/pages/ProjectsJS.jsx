@@ -9,40 +9,111 @@ import "react-multi-carousel/lib/styles.css";
 import ProjectCardCarousel from "../components/ProjectCardCarousel";
 import ButtonRight from "../components/ButtonRight";
 import ButtonLeft from "../components/ButtonLeft";
+import responsive from "../utils/responsiveSettings";
+import { motion } from "framer-motion";
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 2,
+const ProjectsJS = () => {
+
+const imgAnim = {
+  initial: {
+    opacity: 0,
+    x: Math.floor(Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1)),
+    y: Math.floor(Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1)),
   },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 2,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
+  visible: {
+    opacity: 1,
+    x: 0,
+    y: 0,
   },
 };
 
-const ProjectsJS = () => {
-  return (
-    <>
-      <Mouse />
-      <div className="home">
+   const backgroundStyle = {
+     backgroundSize: "cover", // Couvre toute la zone de l'élément
+     backgroundPosition: "center", // Centre l'image dans l'élément
+     backgroundRepeat: "no-repeat",
+     height: "auto", // Hauteur fixe pour l'élément, ajustez selon vos besoins
+     width: "100%", // Largeur de l'élément (peut être ajustée selon vos besoins)
+     maxWidth: "700px",
+     aspectRatio: "16/9",
+     borderRadius: "10px",
+     display: "flex", // Pour centrer le contenu dans l'élément, si nécessaire
+     justifyContent: "center", // Centre horizontalement le contenu
+     alignItems: "center", // Centre verticalement le contenu
+     color: "#e2e2e2", // Couleur du texte pour contraster avec le fond, si vous avez du texte
+   };
+return (
+  <>
+    <Mouse />
+    <div className="project">
+      <header>
+        <div className="nav-container">
           <Navigation />
+        </div>
+        <div className="sn-logo">
           <SocialNetwork />
           <Logo />
-        Hello JS
-       
-      </div>
-    </>
-  );
+        </div>
+      </header>
+      <main>
+        <div className="scroll-left">
+          <ButtonLeft to="/projects/sass" />
+        </div>
+        <div className="projects_js">
+          <section id="projects-js-menu">
+            <motion.div
+              initial="initial"
+              animate="visible"
+              variants={imgAnim}
+              transition={{ duration: 1.2 }}
+            >
+              <Carousel
+                swipeable={true}
+                draggable={false}
+                showDots={true}
+                responsive={responsive}
+                focusOnSelect={true}
+                keyBoardControl={true}
+                customTransition="all .5"
+                transitionDuration={500}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={[
+                  "superLargeDesktop",
+                  "desktop",
+                  "tablet",
+                  "mobile",
+                ]}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px"
+              >
+                {projectsData.js.map((project) => (
+                  <React.Fragment key={project.id}>
+                    <h2>{project.title}</h2>
+                    <ProjectCardCarousel
+                      style={{
+                        ...backgroundStyle,
+                        backgroundImage: `url(${project.img})`,
+                      }}
+                      // title={project.title}
+                      date={project.date}
+                      infos={project.infos}
+                      link={project.link}
+                    />
+                  </React.Fragment>
+                ))}
+              </Carousel>
+            </motion.div>
+          </section>
+        </div>
+        <div className="scroll-right">
+          <ButtonRight to="/projects/react" />
+        </div>
+      </main>
+      <footer>
+        <div className="empty"></div>
+      </footer>
+    </div>
+  </>
+);
 };
 
 export default ProjectsJS;

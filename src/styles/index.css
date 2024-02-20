@@ -214,7 +214,7 @@ a:visited {
   -webkit-perspective: 500px;
           perspective: 500px;
 }
-@media screen and (max-width: 1023px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (orientation: landscape) {
   .navigation .nav-portfolio .nav-projects {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -875,6 +875,12 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_sass #projects-sass-menu {
+    width: 60%;
+    max-width: 300px;
+  }
+}
 .projects_sass #projects-sass-menu div {
   height: 100%;
   width: 100%;
@@ -883,7 +889,23 @@ main {
   height: 100%;
   width: 100%;
 }
-.projects_sass #projects-sass-menu div .carousel-container h2 {
+.projects_sass #projects-sass-menu div .carousel-container ul li {
+  padding: 0 20px;
+}
+.projects_sass #projects-sass-menu div .carousel-container ul li .en-tete {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects_sass #projects-sass-menu div .carousel-container ul li .en-tete h2 {
   font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
   margin-bottom: 12px;
   font-family: "font-2", serif;
@@ -894,6 +916,11 @@ main {
           animation: transformTitle 1.5s ease forwards;
   -webkit-transform-origin: 150%;
           transform-origin: 150%;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_sass #projects-sass-menu div .carousel-container ul li .en-tete h2 {
+    font-size: 1.2rem;
+  }
 }
 @-webkit-keyframes transformTitle {
   to {
@@ -907,21 +934,30 @@ main {
             transform: scaleX(1);
   }
 }
-.projects_sass #projects-sass-menu div .carousel-container .card {
+.projects_sass #projects-sass-menu div .carousel-container ul li .en-tete svg {
+  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_sass #projects-sass-menu div .carousel-container ul li .en-tete svg {
+    font-size: 1.2rem;
+  }
+}
+.projects_sass #projects-sass-menu div .carousel-container ul li .card {
   position: relative;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   overflow: hidden;
 }
-.projects_sass #projects-sass-menu div .carousel-container .card:hover span,
-.projects_sass #projects-sass-menu div .carousel-container .card span:hover {
+.projects_sass #projects-sass-menu div .carousel-container ul li .card:hover span,
+.projects_sass #projects-sass-menu div .carousel-container ul li .card span:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
   visibility: visible;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.projects_sass #projects-sass-menu div .carousel-container .card span {
+.projects_sass #projects-sass-menu div .carousel-container ul li .card span {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -936,16 +972,16 @@ main {
   -webkit-transform: translateY(300px);
           transform: translateY(300px);
 }
-.projects_sass #projects-sass-menu div .carousel-container .card span h3 {
+.projects_sass #projects-sass-menu div .carousel-container ul li .card span h3 {
   padding-bottom: 10px;
   color: rgb(2, 121, 148);
 }
-.projects_sass #projects-sass-menu div .carousel-container .card span p {
+.projects_sass #projects-sass-menu div .carousel-container ul li .card span p {
   margin-bottom: 30px;
   color: rgb(40, 40, 40);
   font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
 }
-.projects_sass #projects-sass-menu div .carousel-container .card span a {
+.projects_sass #projects-sass-menu div .carousel-container ul li .card span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,16 +999,24 @@ main {
   border-radius: 10px;
 }
 @media screen and (max-width: 410px) {
-  .projects_sass #projects-sass-menu div .carousel-container .card span a {
+  .projects_sass #projects-sass-menu div .carousel-container ul li .card span a {
     width: 100px;
   }
 }
-.projects_sass #projects-sass-menu div .carousel-container .card span a:hover {
+.projects_sass #projects-sass-menu div .carousel-container ul li .card span a:hover {
   color: #00c1ec;
   background: #e7f7fe;
 }
-.projects_sass #projects-sass-menu div .carousel-container .custom-dot-list-style {
+.projects_sass #projects-sass-menu div .carousel-container ul li .custom-dot-list-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 200px;
   margin: 0 auto;
-  gap: 15px;
 }/*# sourceMappingURL=index.css.map */

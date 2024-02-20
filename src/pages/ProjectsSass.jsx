@@ -11,6 +11,8 @@ import ButtonRight from "../components/ButtonRight";
 import ButtonLeft from "../components/ButtonLeft";
 import responsive from "../utils/responsiveSettings";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSass } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectsSass = () => {
 
@@ -88,7 +90,13 @@ const imgAnim = {
                 >
                   {projectsData.sass.map((project) => (
                     <React.Fragment key={project.id}>
-                      <h2>{project.title}</h2>
+                      <div className="en-tete">
+                        <h2>{project.title}</h2>
+                        <FontAwesomeIcon
+                          icon={faSass}
+                          style={{ color: "#C76395" }}
+                        />
+                      </div>
                       <ProjectCardCarousel
                         style={{
                           ...backgroundStyle,

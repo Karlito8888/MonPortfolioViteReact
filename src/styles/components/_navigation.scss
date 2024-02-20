@@ -75,7 +75,7 @@
       transition: 0.3s;
       perspective: 500px;
 
-      @media screen and (max-width: 1023px) and (orientation: landscape) {
+      @media screen and (max-width: 1025px) and (orientation: landscape) {
         display: flex;
         gap: 15px;
       }
