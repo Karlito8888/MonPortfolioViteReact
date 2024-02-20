@@ -29,9 +29,7 @@ const SocialLink = ({ href, icon, onMouseOver, onMouseLeave, label }) => (
     style={{ color: "#6ED2F1" }}
     aria-label={label}
   >
-    <li>
       <FontAwesomeIcon icon={icon} className="icon" />
-    </li>
   </a>
 );
 
@@ -49,16 +47,19 @@ const SocialNetwork = () => {
 
   return (
     <div className="social-network">
+      <ul>
         {socialLinks.map((link) => (
-          <SocialLink
-            key={link.id}
-            href={link.href}
-            icon={link.icon}
-            onMouseOver={handleMouseOver}
-            onMouseLeave={handleMouseLeave}
-            label={link.label}
-          />
+          <li key={link.id}>
+            <SocialLink
+              href={link.href}
+              icon={link.icon}
+              onMouseOver={handleMouseOver}
+              onMouseLeave={handleMouseLeave}
+              label={link.label}
+            />
+          </li>
         ))}
+      </ul>
     </div>
   );
 };
