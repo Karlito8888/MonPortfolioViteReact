@@ -7,9 +7,9 @@
   line-height: 150%;
   color: $color-4;
 
-  @media screen and (max-width: 480px) {
-    line-height: 120%;
-  }
+  // @media screen and (max-width: 480px) {
+  //   line-height: 120%;
+  // }
 
   &:before {
     content: "";
@@ -56,7 +56,6 @@
 
     &:hover .nav-projects,
     .nav-projects:hover {
-      visibility: visible;
       opacity: 1;
 
       li {
@@ -75,9 +74,15 @@
       transition: 0.3s;
       perspective: 500px;
 
-      @media screen and (max-width: 1025px) and (orientation: landscape) {
+      @media screen and (max-width: 1180px) and (orientation: landscape) {
         display: flex;
-        gap: 15px;
+        gap: 20px;
+      }
+
+      @media screen and (max-width: 932px) and (orientation: landscape) {
+        display: grid;
+        padding-right: 0;
+        width: 200px;
       }
 
       li {

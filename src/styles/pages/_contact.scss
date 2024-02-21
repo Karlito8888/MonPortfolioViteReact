@@ -41,8 +41,8 @@
     overflow: visible;
 
     @media screen and (max-width: 999px) and (orientation: landscape) {
-        grid-template-columns: 50px 1fr 50px;
-      }
+      grid-template-columns: 50px 1fr 50px;
+    }
 
     @media screen and (max-width: 700px) {
       grid-template-columns: 50px 1fr 50px;
@@ -121,24 +121,6 @@
           border: none;
         }
       }
-
-      // @media screen and (max-width: 916px) and (orientation: landscape) {
-      //   h2 {
-      //     font-size: clamp(1.2rem, 1.0833rem + 0.5333vw, 1.5rem);
-      //     margin-bottom: 0px;
-      //   }
-
-      //   input {
-      //     padding: 6px;
-      //     margin-bottom: 10px;
-      //   }
-
-      //   textarea {
-      //     resize: none;
-      //     padding: 6px 0;
-      //     height: 30px;
-      //   }
-      // }
     }
 
     .contact-infos {
@@ -149,22 +131,22 @@
       justify-content: space-evenly;
 
       @media screen and (max-width: 999px) and (orientation: landscape) {
-          text-align: center;
-        }
-      
-        @media screen and (max-width: 700px) {
-          text-align: center;
-        }
+        text-align: center;
+      }
+
+      @media screen and (max-width: 700px) {
+        text-align: center;
+      }
 
       h4 {
         color: $color-4;
-        font-size: clamp(1.3rem, 1.1056rem + 0.8889vw, 1.8rem);
+        font-size: clamp(1.1rem, 0.75rem + 1.12vw, 1.8rem);
         font-weight: 200;
         margin-bottom: 10px;
       }
 
       p {
-        font-size: 1rem;
+        font-size: clamp(0.8rem, 0.65rem + 0.48vw, 1.1rem);
         letter-spacing: 2px;
         line-height: 130%;
       }
@@ -177,25 +159,25 @@
         }
       }
 
-      .content-adresse {
-        @media screen and (max-width: 768px) {
-          text-align: center;
-          font-size: 0.8rem;
-        }
-      }
+      // .content-adresse {
+      //   @media screen and (max-width: 768px) {
+      //     text-align: center;
+      //     font-size: 0.8rem;
+      //   }
+      // }
 
-      .content-téléphone {
-        @media screen and (max-width: 768px) {
-          text-align: center;
-          font-size: 0.8rem;
-        }
-      }
-      .content-email {
-        @media screen and (max-width: 768px) {
-          font-size: 0.8rem;
-          text-align: center;
-        }
-      }
+      // .content-téléphone {
+      //   @media screen and (max-width: 768px) {
+      //     text-align: center;
+      //     font-size: 0.8rem;
+      //   }
+      // }
+      // .content-email {
+      //   @media screen and (max-width: 768px) {
+      //     font-size: 0.8rem;
+      //     text-align: center;
+      //   }
+      // }
     }
   }
 }
