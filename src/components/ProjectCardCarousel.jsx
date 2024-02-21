@@ -12,7 +12,9 @@ const ProjectCardCarousel = ({
       <span>
         <h3>{date}</h3>
         <p>{infos}</p>
-        <a href={link}>Voir le site</a>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          Voir le site
+        </a>
       </span>
     </div>
   );
