@@ -4,7 +4,12 @@
   position: relative;
   overflow: visible;
   display: grid;
-  grid-template-rows: 15% 70% 15%;
+  grid-template-rows: 20% 60% 20%;
+
+
+  @media screen and (max-width: 933px) and (orientation: landscape) {
+      grid-template-rows: 30% 40% 30%;
+    }
 
   &:after {
     content: "";

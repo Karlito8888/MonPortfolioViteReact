@@ -1,35 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ContactForm from "../components/ContactForm";
 import Logo from "../components/Logo";
 import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import SocialNetwork from "../components/SocialNetwork";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import ContactInfoItem from "../components/ContactInfoItem";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import ButtonLeft from "../components/ButtonLeft";
 
 const Contact = () => {
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
-
-  const responsive = {
-    mobile: {
-      breakpoint: { max: 768, min: 0 },
-      items: 1,
-    },
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <>

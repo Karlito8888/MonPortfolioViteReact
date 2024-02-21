@@ -57,6 +57,7 @@
     &:hover .nav-projects,
     .nav-projects:hover {
       opacity: 1;
+      visibility: visible;
 
       li {
         transform: rotateY(0deg);
@@ -66,24 +67,26 @@
     .nav-projects {
       position: absolute;
       visibility: hidden;
+      display: flex;
+        gap: 15px;
       opacity: 0;
-      padding: 0 40px;
+      padding: 0 30px;
       // width: 300px;
       width: auto;
       transform: translateX(70px);
       transition: 0.3s;
       perspective: 500px;
 
-      @media screen and (max-width: 1180px) and (orientation: landscape) {
-        display: flex;
-        gap: 20px;
-      }
+      // @media screen and (max-width: 1024px) and (orientation: landscape) {
+      //   display: flex;
+      //   gap: 20px;
+      // }
 
-      @media screen and (max-width: 932px) and (orientation: landscape) {
-        display: grid;
-        padding-right: 0;
-        width: 200px;
-      }
+      // @media screen and (max-width: 932px) and (orientation: landscape) {
+      //   display: grid;
+      //   padding-right: 0;
+      //   width: 200px;
+      // }
 
       li {
         transform: rotateY(30deg) scaleX(1.2);

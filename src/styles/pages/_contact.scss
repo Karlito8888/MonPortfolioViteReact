@@ -4,7 +4,11 @@
   position: relative;
   overflow: visible;
   display: grid;
-  grid-template-rows: 15% 70% 15%;
+  grid-template-rows: 20% 60% 20%;
+
+  @media screen and (max-width: 933px) and (orientation: landscape) {
+    grid-template-rows: 30% 55% 15%;
+    }
 
   &:after {
     content: "";
@@ -114,7 +118,7 @@
           height: 55px;
           width: 126px;
           border-radius: 50px;
-          margin-top: 20px;
+          margin-top: 70px;
           font-size: 1.2rem;
           cursor: pointer;
           transition: 0.3s;
@@ -129,6 +133,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      overflow: visible;
 
       @media screen and (max-width: 999px) and (orientation: landscape) {
         text-align: center;
@@ -137,6 +142,29 @@
       @media screen and (max-width: 700px) {
         text-align: center;
       }
+
+
+    @media screen and (max-width: 933px) and (orientation: landscape) {
+      display: grid;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: 
+      "ad tel"
+      "ad mail";
+      align-items: center;
+
+
+      .content-adresse {
+        grid-area: ad;
+        }
+      
+        .content-téléphone {
+          grid-area: tel;
+        }
+        .content-email {
+          grid-area: mail;
+        }
+    }
 
       h4 {
         color: $color-4;
@@ -149,35 +177,100 @@
         font-size: clamp(0.8rem, 0.65rem + 0.48vw, 1.1rem);
         letter-spacing: 2px;
         line-height: 130%;
+
+        @media screen and (max-width: 932px) and (orientation: landscape) {
+            font-size: 0.8rem;
+          }
       }
 
       .content-téléphone,
       .content-email,
       .content-adresse {
         &:hover {
-          transform: translateX(5px);
+        -webkit-animation-name: wobble;
+          /* Pour les navigateurs qui utilisent des préfixes WebKit */
+          animation-name: wobble;
+          -webkit-animation-duration: 1s;
+          /* Ajustez la durée si nécessaire */
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          /* Pour que l'élément garde l'état de la fin de l'animation */
+          animation-fill-mode: both;
         }
       }
 
-      // .content-adresse {
-      //   @media screen and (max-width: 768px) {
-      //     text-align: center;
-      //     font-size: 0.8rem;
-      //   }
-      // }
-
-      // .content-téléphone {
-      //   @media screen and (max-width: 768px) {
-      //     text-align: center;
-      //     font-size: 0.8rem;
-      //   }
-      // }
-      // .content-email {
-      //   @media screen and (max-width: 768px) {
-      //     font-size: 0.8rem;
-      //     text-align: center;
-      //   }
-      // }
+            @-webkit-keyframes wobble {
+              0% {
+                -webkit-transform: none;
+                transform: none;
+              }
+      
+              15% {
+                -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -5deg);
+                transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -5deg);
+              }
+      
+              30% {
+                -webkit-transform: translate3d(13%, 0, 0) rotate3d(0, 0, 1, 3deg);
+                transform: translate3d(13%, 0, 0) rotate3d(0, 0, 1, 3deg);
+              }
+      
+              45% {
+                -webkit-transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -3deg);
+                transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -3deg);
+              }
+      
+              60% {
+                -webkit-transform: translate3d(7%, 0, 0) rotate3d(0, 0, 1, 2deg);
+                transform: translate3d(7%, 0, 0) rotate3d(0, 0, 1, 2deg);
+              }
+      
+              75% {
+                -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+                transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+              }
+      
+              100% {
+                -webkit-transform: none;
+                transform: none;
+              }
+            }
+      
+            @keyframes wobble {
+              0% {
+                -webkit-transform: none;
+                transform: none;
+              }
+      
+              15% {
+                -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -5deg);
+                transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -5deg);
+              }
+      
+              30% {
+                -webkit-transform: translate3d(13%, 0, 0) rotate3d(0, 0, 1, 3deg);
+                transform: translate3d(13%, 0, 0) rotate3d(0, 0, 1, 3deg);
+              }
+      
+              45% {
+                -webkit-transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -3deg);
+                transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -3deg);
+              }
+      
+              60% {
+                -webkit-transform: translate3d(7%, 0, 0) rotate3d(0, 0, 1, 2deg);
+                transform: translate3d(7%, 0, 0) rotate3d(0, 0, 1, 2deg);
+              }
+      
+              75% {
+                -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+                transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+              }
+      
+              100% {
+                -webkit-transform: none;
+                transform: none;
+              }}
     }
   }
 }
