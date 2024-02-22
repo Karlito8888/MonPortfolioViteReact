@@ -7,7 +7,7 @@
 
   #projects-sass-menu {
     height: 100%;
-    width: 90%;
+    width: 100%;
     max-width: 700px;
     display: flex;
     justify-content: center;
@@ -26,6 +26,11 @@
         height: 100%;
         width: 100%;
 
+        @media screen and (max-width: 999px) and (orientation: landscape) {
+          display: flex;
+          align-items: flex-start;
+        }
+
         ul {
           li {
             padding: 0 20px;
@@ -37,7 +42,7 @@
               align-items: center;
               justify-content: space-between;
               h2 {
-                font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
+                font-size: clamp(1rem, 0rem + 3.2vw, 3rem);
                 margin-bottom: 12px;
                 font-family: $font-2;
                 color: $color-2;
@@ -58,10 +63,10 @@
               svg {
                 font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
                 margin-bottom: 12px;
-                
-                  @media screen and (max-width: 999px) and (orientation: landscape) {
-                    font-size: 1.2rem;
-                  }
+
+                @media screen and (max-width: 999px) and (orientation: landscape) {
+                  font-size: 1.2rem;
+                }
               }
             }
 

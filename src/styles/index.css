@@ -900,7 +900,7 @@ footer {
 }
 .projects_sass #projects-sass-menu {
   height: 100%;
-  width: 90%;
+  width: 100%;
   max-width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -926,6 +926,16 @@ footer {
   height: 100%;
   width: 100%;
 }
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_sass #projects-sass-menu div .carousel-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .projects_sass #projects-sass-menu div .carousel-container ul li {
   padding: 0 20px;
 }
@@ -943,7 +953,7 @@ footer {
           justify-content: space-between;
 }
 .projects_sass #projects-sass-menu div .carousel-container ul li .en-tete h2 {
-  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
+  font-size: clamp(1rem, 0rem + 3.2vw, 3rem);
   margin-bottom: 12px;
   font-family: "font-2", serif;
   color: #00c1ec;
