@@ -14,7 +14,7 @@ export const projectsData = {
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: gamingCampusImage,
-      link: "http://www.google.com",
+      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/gaming-campus/index.html",
     },
     {
       id: 2,
