@@ -101,11 +101,27 @@ a:visited {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .scroll-left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 15px;
+  }
+}
 
 .scroll-right {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .scroll-right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 15px;
+  }
 }
 
 .navigation {
@@ -246,6 +262,11 @@ main {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
   overflow: visible;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  main {
+    grid-template-columns: 120px 1fr 120px;
+  }
 }
 
 footer {
@@ -735,7 +756,12 @@ footer {
 }
 @media screen and (max-width: 933px) and (orientation: landscape) {
   .project {
-    grid-template-rows: 30% 60% 10%;
+    grid-template-rows: 30% 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project {
+    grid-template-rows: 30% 40% 30%;
   }
 }
 .project:after {
@@ -914,8 +940,12 @@ footer {
 }
 @media screen and (max-width: 999px) and (orientation: landscape) {
   .projects_sass #projects-sass-menu {
-    width: 60%;
-    max-width: 300px;
+    width: calc(100% - 240px);
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 .projects_sass #projects-sass-menu div {
@@ -995,6 +1025,12 @@ footer {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   overflow: hidden;
+}
+@media screen and (max-width: 999px) and (orientation: landscape) {
+  .projects_sass #projects-sass-menu div .carousel-container ul li .card {
+    max-width: 350px !important;
+    margin: 0 auto;
+  }
 }
 .projects_sass #projects-sass-menu div .carousel-container ul li .card:hover span,
 .projects_sass #projects-sass-menu div .carousel-container ul li .card span:hover {

@@ -8,8 +8,12 @@
 
 
   @media screen and (max-width: 933px) and (orientation: landscape) {
-      grid-template-rows: 30% 60% 10%;
+      grid-template-rows: 30% 70%;
     }
+
+        @media screen and (max-width: 500px) {
+          grid-template-rows: 30% 40% 30%;
+        }
 
   &:after {
     content: "";

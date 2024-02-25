@@ -100,7 +100,15 @@ a:visited {
 
 .scroll-left {
   justify-content: flex-end;
+  @media screen and (max-width: 999px) and (orientation: landscape) {
+      justify-content: flex-start;
+      margin-left: 15px;
+    }
 }
 .scroll-right {
   justify-content: flex-start;
+  @media screen and (max-width: 999px) and (orientation: landscape) {
+      justify-content: flex-end;
+      margin-right: 15px;
+    }
 }

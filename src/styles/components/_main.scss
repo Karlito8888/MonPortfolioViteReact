@@ -3,4 +3,8 @@ main {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
   overflow: visible;
+
+  @media screen and (max-width: 999px) and (orientation: landscape) {
+    grid-template-columns: 120px 1fr 120px;
+    }
 }
