@@ -914,6 +914,7 @@ footer {
 .projects_sass {
   height: 100%;
   width: 100%;
+  max-width: 580px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,10 +924,12 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
 }
 .projects_sass #projects-sass-menu {
   height: 100%;
   width: 100%;
+  min-width: 427px;
   max-width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -940,7 +943,7 @@ footer {
 }
 @media screen and (max-width: 999px) and (orientation: landscape) {
   .projects_sass #projects-sass-menu {
-    width: calc(100% - 240px);
+    width: 50%;
     position: absolute;
     left: 50%;
     top: -40px;
@@ -966,10 +969,10 @@ footer {
             align-items: flex-start;
   }
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li {
-  padding: 0 20px;
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li {
+  padding: 0 40px;
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li .en-tete {
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .en-tete {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -982,8 +985,8 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li .en-tete h2 {
-  font-size: clamp(1rem, 0rem + 3.2vw, 3rem);
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .en-tete h2 {
+  font-size: clamp(0.9rem, -0.15rem + 3.36vw, 3rem);
   margin-bottom: 12px;
   font-family: "font-2", serif;
   color: #00c1ec;
@@ -995,7 +998,7 @@ footer {
           transform-origin: 150%;
 }
 @media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_sass #projects-sass-menu div .carousel-container ul li .en-tete h2 {
+  .projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .en-tete h2 {
     font-size: 1.1rem;
   }
 }
@@ -1011,36 +1014,36 @@ footer {
             transform: scaleX(1);
   }
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li .en-tete svg {
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .en-tete svg {
   font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
   margin-bottom: 12px;
 }
 @media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_sass #projects-sass-menu div .carousel-container ul li .en-tete svg {
+  .projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .en-tete svg {
     font-size: 1.2rem;
   }
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li .card {
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card {
   position: relative;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   overflow: hidden;
 }
 @media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_sass #projects-sass-menu div .carousel-container ul li .card {
+  .projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card {
     max-width: 350px !important;
     margin: 0 auto;
   }
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li .card:hover span,
-.projects_sass #projects-sass-menu div .carousel-container ul li .card span:hover {
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card:hover span,
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
   visibility: visible;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li .card span {
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1055,16 +1058,16 @@ footer {
   -webkit-transform: translateY(300px);
           transform: translateY(300px);
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li .card span h3 {
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span h3 {
   padding-bottom: 10px;
   color: rgb(2, 121, 148);
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li .card span p {
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span p {
   margin-bottom: 30px;
   color: rgb(40, 40, 40);
   font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li .card span a {
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1082,15 +1085,15 @@ footer {
   border-radius: 10px;
 }
 @media screen and (max-width: 410px) {
-  .projects_sass #projects-sass-menu div .carousel-container ul li .card span a {
+  .projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span a {
     width: 100px;
   }
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li .card span a:hover {
+.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span a:hover {
   color: #00c1ec;
   background: #e7f7fe;
 }
-.projects_sass #projects-sass-menu div .carousel-container ul li .custom-dot-list-style {
+.projects_sass #projects-sass-menu div .carousel-container .custom-dot-list-style {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1100,8 +1103,17 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 200px;
+  width: 80%;
   margin: 0 auto;
+}
+.projects_sass #projects-sass-menu div .carousel-container .custom-dot-list-style .react-multi-carousel-dot button {
+  height: 16px;
+  width: 16px;
+  border-color: #00c1ec;
+  margin-right: 0;
+}
+.projects_sass #projects-sass-menu div .carousel-container .custom-dot-list-style .react-multi-carousel-dot--active button {
+  background-color: #00c1ec;
 }
 
 .projects_js {

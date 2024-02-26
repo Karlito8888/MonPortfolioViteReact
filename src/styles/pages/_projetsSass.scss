@@ -1,10 +1,12 @@
 .projects_sass {
   height: 100%;
   width: 100%;
+  max-width: 580px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  margin: 0 auto;
+
   // @media screen and (max-width: 999px) and (orientation: landscape) {
   //        position: absolute;
   //        left: 50%;
@@ -15,18 +17,21 @@
   #projects-sass-menu {
     height: 100%;
     width: 100%;
+    min-width: 427px;
     max-width: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media screen and (max-width: 999px) and (orientation: landscape) {
-      width: calc(100% - 240px);
+      width: 50%;
       position: absolute;
       left: 50%;
       top: -40px;
       transform: translateX(-50%);
     }
+
+    
 
     div {
       height: 100%;
@@ -41,10 +46,9 @@
           align-items: flex-start;
         }
 
-        ul {
+        .react-multi-carousel-track {
           li {
-            padding: 0 20px;
-           
+            padding: 0 40px;
 
             .en-tete {
               width: 100%;
@@ -52,9 +56,9 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
-              
+
               h2 {
-                font-size: clamp(1rem, 0rem + 3.2vw, 3rem);
+              font-size: clamp(0.9rem, -0.15rem + 3.36vw, 3rem);
                 margin-bottom: 12px;
                 font-family: $font-2;
                 color: $color-2;
@@ -86,10 +90,11 @@
               position: relative;
               transition: all 0.3s ease;
               overflow: hidden;
+              // margin-bottom: 50px;
               @media screen and (max-width: 999px) and (orientation: landscape) {
-                  max-width: 350px !important;
-                  margin: 0 auto;
-                }
+                max-width: 350px !important;
+                margin: 0 auto;
+              }
 
               &:hover span,
               span:hover {
@@ -145,14 +150,28 @@
                 }
               }
             }
-            .custom-dot-list-style {
-              display: flex;
-              align-items: center;
-              justify-content: space-evenly;
-              width: 200px;
-              margin: 0 auto;
+          }
+        }
+        .custom-dot-list-style {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 80%;
+          margin: 0 auto;
+
+          .react-multi-carousel-dot {
+            button {
+              height: 16px;
+              width: 16px;
+              border-color: $color-2;
+              margin-right: 0;
             }
           }
+                    .react-multi-carousel-dot--active {
+                      button {
+                        background-color: $color-2;
+                      }
+                    }
         }
       }
     }
