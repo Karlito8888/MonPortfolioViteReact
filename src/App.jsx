@@ -8,11 +8,9 @@ import ProjectsSass from "./pages/ProjectsSass";
 import ProjectsJS from "./pages/ProjectsJS";
 import ProjectsReact from "./pages/ProjectsReact";
 import ProjectsGames from "./pages/ProjectsGames";
-import { useAdjustVH } from "./components/useAdjustVH";
 
 function App() {
-  useAdjustVH();
-  
+
   return (
     <BrowserRouter>
       <AnimatePresence>
