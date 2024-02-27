@@ -32,13 +32,14 @@ body,
 #root,
 main,
 .home {
-  height: 100vh;
-  width: 100vw;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
 }
 
 html {
   scroll-behavior: unset;
-  height: -webkit-fill-available;
 }
 
 body {
@@ -47,7 +48,6 @@ body {
   background-color: #fafeff;
   color: rgb(40, 40, 40);
   letter-spacing: 1px;
-  height: -webkit-fill-available;
 }
 
 a,
