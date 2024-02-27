@@ -17,21 +17,18 @@
   #projects-sass-menu {
     height: 100%;
     width: 100%;
-    min-width: 427px;
     max-width: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 999px) and (orientation: landscape) {
+    @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
       width: 50%;
       position: absolute;
       left: 50%;
       top: -40px;
       transform: translateX(-50%);
     }
-
-    
 
     div {
       height: 100%;
@@ -40,11 +37,12 @@
       .carousel-container {
         height: 100%;
         width: 100%;
+        align-items: flex-start;
 
-        @media screen and (max-width: 999px) and (orientation: landscape) {
-          display: flex;
-          align-items: flex-start;
-        }
+        // @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+        //   display: flex;
+        //   align-items: flex-start;
+        // }
 
         .react-multi-carousel-track {
           li {
@@ -58,7 +56,7 @@
               justify-content: space-between;
 
               h2 {
-              font-size: clamp(0.9rem, -0.15rem + 3.36vw, 3rem);
+                font-size: clamp(0.9rem, -0.15rem + 3.36vw, 3rem);
                 margin-bottom: 12px;
                 font-family: $font-2;
                 color: $color-2;
@@ -66,7 +64,7 @@
                 animation: transformTitle 1.5s ease forwards;
                 transform-origin: 150%;
 
-                @media screen and (max-width: 999px) and (orientation: landscape) {
+                @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
                   font-size: 1.1rem;
                 }
 
@@ -80,7 +78,7 @@
                 font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
                 margin-bottom: 12px;
 
-                @media screen and (max-width: 999px) and (orientation: landscape) {
+                @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
                   font-size: 1.2rem;
                 }
               }
@@ -91,7 +89,7 @@
               transition: all 0.3s ease;
               overflow: hidden;
               // margin-bottom: 50px;
-              @media screen and (max-width: 999px) and (orientation: landscape) {
+              @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
                 max-width: 350px !important;
                 margin: 0 auto;
               }
@@ -157,7 +155,7 @@
           align-items: center;
           justify-content: space-evenly;
           width: 80%;
-          margin: 0 auto;
+          margin: 0 auto 10%;
 
           .react-multi-carousel-dot {
             button {
@@ -167,11 +165,11 @@
               margin-right: 0;
             }
           }
-                    .react-multi-carousel-dot--active {
-                      button {
-                        background-color: $color-2;
-                      }
-                    }
+          .react-multi-carousel-dot--active {
+            button {
+              background-color: $color-2;
+            }
+          }
         }
       }
     }

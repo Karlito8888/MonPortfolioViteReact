@@ -1,13 +1,13 @@
 .project {
   position: relative;
   overflow: visible;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: grid;
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 20% 80%;
 
 
-  @media screen and (max-width: 933px) and (orientation: landscape) {
+  @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
       grid-template-rows: 30% 70%;
     }
 

@@ -1,12 +1,12 @@
 .contact {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: relative;
   overflow: visible;
   display: grid;
   grid-template-rows: 20% 60% 20%;
 
-  @media screen and (max-width: 933px) and (orientation: landscape) {
+@media (max-width: 933px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
     grid-template-rows: 30% 55% 15%;
   }
 
@@ -44,7 +44,7 @@
     grid-template-columns: 50px 1fr 1fr 50px;
     overflow: visible;
 
-    @media screen and (max-width: 999px) and (orientation: landscape) {
+    @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
       grid-template-columns: 50px 1fr 50px;
     }
 
@@ -60,7 +60,7 @@
       flex-direction: column;
       justify-content: center;
 
-      @media screen and (max-width: 999px) and (orientation: landscape) {
+    @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
         display: none;
       }
       @media screen and (max-width: 700px) {
@@ -136,11 +136,6 @@
       overflow: visible;
       padding-left: 20%;
 
-      @media screen and (max-width: 999px) and (orientation: landscape) {
-        text-align: center;
-        padding-left: 0;
-      }
-
       @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
         display: grid;
         grid-template-rows: 50% 50%;
@@ -148,6 +143,8 @@
         grid-template-areas:
           "ad tel"
           "ad mail";
+          text-align: center;
+            padding-left: 0;
         align-items: center;
 
         .content-adresse {
@@ -178,7 +175,7 @@
         letter-spacing: 2px;
         line-height: 130%;
 
-        @media screen and (max-width: 932px) and (orientation: landscape) {
+        @media (max-width: 932px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
           font-size: 0.8rem;
         }
       }
