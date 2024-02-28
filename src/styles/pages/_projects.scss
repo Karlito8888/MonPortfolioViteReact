@@ -113,32 +113,46 @@
                 background-image: linear-gradient(
                   to top,
                   rgba(255, 255, 255, 1) 0%,
-                  rgba(255, 255, 255, 0.9) 60%,
-                  rgba(255, 255, 255, 0) 100%
+                  rgba(255, 255, 255, 0.5) 100%
                 );
                 visibility: visible;
                 transform: translateY(0);
               }
               span {
                 position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 bottom: 0;
                 left: 0;
                 width: 100%;
+                height: 100%;
+                line-height: 120%;
                 padding: 0.5rem;
                 margin: 0 auto;
-                line-height: 120%;
-                font-size: 1.5rem;
                 visibility: hidden;
                 transition: 0.5s ease;
                 transform: translateY(300px);
                 h3 {
-                  padding-bottom: 10px;
+                  font-size: clamp(1.1rem, 0.9545rem + 0.5818vw, 1.5rem);
+                  padding-bottom: 5px;
                   color: rgb(2, 121, 148);
                 }
                 p {
-                  margin-bottom: 30px;
                   color: $black;
-                  font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
+                  font-size: clamp(0.7rem, 0.4818rem + 0.8727vw, 1.3rem);
+                  @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+                    line-height: 100%;
+                  }
+                  @media (max-width: 750px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+                    font-size: 0.8rem;
+                  }
+                  @media screen and (max-width: 540px) {
+                    line-height: 100%;
+                  }
+                  @media screen and (max-width: 365px) {
+                    font-size: 0.65rem;
+                  }
                 }
                 a {
                   display: flex;
@@ -146,18 +160,24 @@
                   justify-content: center;
                   color: $color-1;
                   background: $color-2;
+                  font-size: clamp(0.8rem, 0.7273rem + 0.2909vw, 1rem);
                   width: 130px;
                   font-size: 1rem;
+                  font-weight: bold;
                   padding: 10px;
+                  border: 1px solid $color-2;
                   border-radius: 10px;
-
-                  @media screen and (max-width: 410px) {
-                    width: 100px;
+                  transition: all 0.3s ease;
+                  @media (max-width: 750px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+                    padding: 6px;
+                  }
+                  @media screen and (max-width: 365px) {
+                    padding: 6px;
                   }
 
                   &:hover {
                     color: $color-2;
-                    background: $color-3;
+                    background: transparent;
                   }
                 }
               }
@@ -172,6 +192,22 @@
           height: auto;
           width: 80%;
           margin: 0 auto;
+          /* Ajoutez ces lignes pour l'animation */
+          opacity: 0;
+          animation-name: fadeIn;
+          animation-duration: 1s;
+          animation-delay: 1s;
+          animation-fill-mode: forwards;
+
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+
+            to {
+              opacity: 1;
+            }
+          }
 
           .react-multi-carousel-dot {
             button {
