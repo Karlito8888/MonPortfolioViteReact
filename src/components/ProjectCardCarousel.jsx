@@ -2,7 +2,6 @@ import React from "react";
 
 const ProjectCardCarousel = ({
  style,
-  title,
   date,
   infos,
   link,

@@ -25,7 +25,7 @@ const Contact = () => {
         </header>
         <main>
           <div className="scroll-left">
-            <ButtonLeft to="/projects/react" />
+            <ButtonLeft to="/projects/games" />
           </div>
           <ContactForm />
           <div className="contact-infos">    

@@ -952,7 +952,10 @@ footer {
     color: #03045e;
   }
 }
-.projects_sass {
+.projects_sass,
+.projects_js,
+.projects_react,
+.projects_games {
   height: 100%;
   width: 100%;
   max-width: 500px;
@@ -967,7 +970,22 @@ footer {
           align-items: center;
   margin: 0 auto;
 }
-.projects_sass #projects-sass-menu {
+.projects_sass #projects-sass-menu,
+.projects_sass #projects-js-menu,
+.projects_sass #projects-react-menu,
+.projects_sass #projects-games-menu,
+.projects_js #projects-sass-menu,
+.projects_js #projects-js-menu,
+.projects_js #projects-react-menu,
+.projects_js #projects-games-menu,
+.projects_react #projects-sass-menu,
+.projects_react #projects-js-menu,
+.projects_react #projects-react-menu,
+.projects_react #projects-games-menu,
+.projects_games #projects-sass-menu,
+.projects_games #projects-js-menu,
+.projects_games #projects-react-menu,
+.projects_games #projects-games-menu {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -981,7 +999,22 @@ footer {
           align-items: center;
 }
 @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  .projects_sass #projects-sass-menu {
+  .projects_sass #projects-sass-menu,
+  .projects_sass #projects-js-menu,
+  .projects_sass #projects-react-menu,
+  .projects_sass #projects-games-menu,
+  .projects_js #projects-sass-menu,
+  .projects_js #projects-js-menu,
+  .projects_js #projects-react-menu,
+  .projects_js #projects-games-menu,
+  .projects_react #projects-sass-menu,
+  .projects_react #projects-js-menu,
+  .projects_react #projects-react-menu,
+  .projects_react #projects-games-menu,
+  .projects_games #projects-sass-menu,
+  .projects_games #projects-js-menu,
+  .projects_games #projects-react-menu,
+  .projects_games #projects-games-menu {
     width: 50%;
     position: absolute;
     left: 50%;
@@ -990,15 +1023,60 @@ footer {
             transform: translateX(-50%);
   }
 }
-.projects_sass #projects-sass-menu div {
+.projects_sass #projects-sass-menu div,
+.projects_sass #projects-js-menu div,
+.projects_sass #projects-react-menu div,
+.projects_sass #projects-games-menu div,
+.projects_js #projects-sass-menu div,
+.projects_js #projects-js-menu div,
+.projects_js #projects-react-menu div,
+.projects_js #projects-games-menu div,
+.projects_react #projects-sass-menu div,
+.projects_react #projects-js-menu div,
+.projects_react #projects-react-menu div,
+.projects_react #projects-games-menu div,
+.projects_games #projects-sass-menu div,
+.projects_games #projects-js-menu div,
+.projects_games #projects-react-menu div,
+.projects_games #projects-games-menu div {
   height: 100%;
   width: 100%;
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list,
+.projects_sass #projects-js-menu div .react-multi-carousel-list,
+.projects_sass #projects-react-menu div .react-multi-carousel-list,
+.projects_sass #projects-games-menu div .react-multi-carousel-list,
+.projects_js #projects-sass-menu div .react-multi-carousel-list,
+.projects_js #projects-js-menu div .react-multi-carousel-list,
+.projects_js #projects-react-menu div .react-multi-carousel-list,
+.projects_js #projects-games-menu div .react-multi-carousel-list,
+.projects_react #projects-sass-menu div .react-multi-carousel-list,
+.projects_react #projects-js-menu div .react-multi-carousel-list,
+.projects_react #projects-react-menu div .react-multi-carousel-list,
+.projects_react #projects-games-menu div .react-multi-carousel-list,
+.projects_games #projects-sass-menu div .react-multi-carousel-list,
+.projects_games #projects-js-menu div .react-multi-carousel-list,
+.projects_games #projects-react-menu div .react-multi-carousel-list,
+.projects_games #projects-games-menu div .react-multi-carousel-list {
   height: 100%;
   width: 100%;
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1006,20 +1084,80 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li {
   padding: 0 40px 2%;
 }
 @media (max-width: 820px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
-  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li {
     padding: 0 10px 2%;
   }
 }
 @media screen and (max-width: 500px) {
-  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li,
+  .projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li {
     padding: 0 10px 2%;
   }
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -1032,7 +1170,22 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2 {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2 {
   font-size: clamp(0.8rem, 0.2545rem + 2.1818vw, 2.3rem);
   margin-bottom: 12px;
   font-family: "font-2", serif;
@@ -1045,7 +1198,22 @@ footer {
           transform-origin: 150%;
 }
 @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2 {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2,
+  .projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2 {
     font-size: 1.1rem;
   }
 }
@@ -1061,36 +1229,141 @@ footer {
             transform: scaleX(1);
   }
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg {
   font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
   margin-bottom: 12px;
 }
 @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg,
+  .projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg {
     font-size: 1.2rem;
   }
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card {
   position: relative;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   overflow: hidden;
 }
 @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card,
+  .projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card {
     max-width: 350px !important;
     margin: 0 auto;
   }
 }
 .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
   visibility: visible;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1105,16 +1378,61 @@ footer {
   -webkit-transform: translateY(300px);
           transform: translateY(300px);
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3 {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3 {
   padding-bottom: 10px;
   color: rgb(2, 121, 148);
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p {
   margin-bottom: 30px;
   color: rgb(40, 40, 40);
   font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1132,15 +1450,60 @@ footer {
   border-radius: 10px;
 }
 @media screen and (max-width: 410px) {
-  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a,
+  .projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a {
     width: 100px;
   }
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover {
   color: #00c1ec;
   background: #e7f7fe;
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1156,513 +1519,42 @@ footer {
   width: 80%;
   margin: 0 auto;
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button {
   height: 16px;
   width: 16px;
   border-color: #00c1ec;
   margin-right: 0;
 }
-.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_sass #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_sass #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_sass #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_js #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_js #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_js #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_js #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_react #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_react #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_react #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_react #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_games #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_games #projects-js-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_games #projects-react-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button,
+.projects_games #projects-games-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button {
   background-color: #00c1ec;
-}
-
-.projects_js {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.projects_js #projects-js-menu {
-  height: 100%;
-  width: 90%;
-  max-width: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_js #projects-js-menu {
-    width: 60%;
-    max-width: 300px;
-  }
-}
-.projects_js #projects-js-menu div {
-  height: 100%;
-  width: 100%;
-}
-.projects_js #projects-js-menu div .carousel-container {
-  height: 100%;
-  width: 100%;
-}
-.projects_js #projects-js-menu div .carousel-container ul li {
-  padding: 0 20px;
-}
-.projects_js #projects-js-menu div .carousel-container ul li .en-tete {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.projects_js #projects-js-menu div .carousel-container ul li .en-tete h2 {
-  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
-  margin-bottom: 12px;
-  font-family: "font-2", serif;
-  color: #00c1ec;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-animation: transformTitle 1.5s ease forwards;
-          animation: transformTitle 1.5s ease forwards;
-  -webkit-transform-origin: 150%;
-          transform-origin: 150%;
-}
-@media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_js #projects-js-menu div .carousel-container ul li .en-tete h2 {
-    font-size: 1.2rem;
-  }
-}
-@keyframes transformTitle {
-  to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-.projects_js #projects-js-menu div .carousel-container ul li .en-tete svg {
-  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
-  margin-bottom: 12px;
-}
-@media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_js #projects-js-menu div .carousel-container ul li .en-tete svg {
-    font-size: 1.2rem;
-  }
-}
-.projects_js #projects-js-menu div .carousel-container ul li .card {
-  position: relative;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-.projects_js #projects-js-menu div .carousel-container ul li .card:hover span,
-.projects_js #projects-js-menu div .carousel-container ul li .card span:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
-  visibility: visible;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-.projects_js #projects-js-menu div .carousel-container ul li .card span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0 auto;
-  line-height: 120%;
-  font-size: 1.5rem;
-  visibility: hidden;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-transform: translateY(300px);
-          transform: translateY(300px);
-}
-.projects_js #projects-js-menu div .carousel-container ul li .card span h3 {
-  padding-bottom: 10px;
-  color: rgb(2, 121, 148);
-}
-.projects_js #projects-js-menu div .carousel-container ul li .card span p {
-  margin-bottom: 30px;
-  color: rgb(40, 40, 40);
-  font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
-}
-.projects_js #projects-js-menu div .carousel-container ul li .card span a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fafeff;
-  background: #00c1ec;
-  width: 130px;
-  font-size: 1rem;
-  padding: 10px;
-  border-radius: 10px;
-}
-@media screen and (max-width: 410px) {
-  .projects_js #projects-js-menu div .carousel-container ul li .card span a {
-    width: 100px;
-  }
-}
-.projects_js #projects-js-menu div .carousel-container ul li .card span a:hover {
-  color: #00c1ec;
-  background: #e7f7fe;
-}
-.projects_js #projects-js-menu div .carousel-container ul li .custom-dot-list-style {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 200px;
-  margin: 0 auto;
-}
-
-.projects_react {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.projects_react #projects-react-menu {
-  height: 100%;
-  width: 90%;
-  max-width: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_react #projects-react-menu {
-    width: 60%;
-    max-width: 300px;
-  }
-}
-.projects_react #projects-react-menu div {
-  height: 100%;
-  width: 100%;
-}
-.projects_react #projects-react-menu div .carousel-container {
-  height: 100%;
-  width: 100%;
-}
-.projects_react #projects-react-menu div .carousel-container ul li {
-  padding: 0 20px;
-}
-.projects_react #projects-react-menu div .carousel-container ul li .en-tete {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.projects_react #projects-react-menu div .carousel-container ul li .en-tete h2 {
-  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
-  margin-bottom: 12px;
-  font-family: "font-2", serif;
-  color: #00c1ec;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-animation: transformTitle 1.5s ease forwards;
-          animation: transformTitle 1.5s ease forwards;
-  -webkit-transform-origin: 150%;
-          transform-origin: 150%;
-}
-@media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_react #projects-react-menu div .carousel-container ul li .en-tete h2 {
-    font-size: 1.2rem;
-  }
-}
-@keyframes transformTitle {
-  to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-.projects_react #projects-react-menu div .carousel-container ul li .en-tete svg {
-  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
-  margin-bottom: 12px;
-}
-@media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_react #projects-react-menu div .carousel-container ul li .en-tete svg {
-    font-size: 1.2rem;
-  }
-}
-.projects_react #projects-react-menu div .carousel-container ul li .card {
-  position: relative;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-.projects_react #projects-react-menu div .carousel-container ul li .card:hover span,
-.projects_react #projects-react-menu div .carousel-container ul li .card span:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
-  visibility: visible;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-.projects_react #projects-react-menu div .carousel-container ul li .card span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0 auto;
-  line-height: 120%;
-  font-size: 1.5rem;
-  visibility: hidden;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-transform: translateY(300px);
-          transform: translateY(300px);
-}
-.projects_react #projects-react-menu div .carousel-container ul li .card span h3 {
-  padding-bottom: 10px;
-  color: rgb(2, 121, 148);
-}
-.projects_react #projects-react-menu div .carousel-container ul li .card span p {
-  margin-bottom: 30px;
-  color: rgb(40, 40, 40);
-  font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
-}
-.projects_react #projects-react-menu div .carousel-container ul li .card span a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fafeff;
-  background: #00c1ec;
-  width: 130px;
-  font-size: 1rem;
-  padding: 10px;
-  border-radius: 10px;
-}
-@media screen and (max-width: 410px) {
-  .projects_react #projects-react-menu div .carousel-container ul li .card span a {
-    width: 100px;
-  }
-}
-.projects_react #projects-react-menu div .carousel-container ul li .card span a:hover {
-  color: #00c1ec;
-  background: #e7f7fe;
-}
-.projects_react #projects-react-menu div .carousel-container ul li .custom-dot-list-style {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 200px;
-  margin: 0 auto;
-}
-
-.projects_games {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.projects_games #projects-games-menu {
-  height: 100%;
-  width: 90%;
-  max-width: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_games #projects-games-menu {
-    width: 60%;
-    max-width: 300px;
-  }
-}
-.projects_games #projects-games-menu div {
-  height: 100%;
-  width: 100%;
-}
-.projects_games #projects-games-menu div .carousel-container {
-  height: 100%;
-  width: 100%;
-}
-.projects_games #projects-games-menu div .carousel-container ul li {
-  padding: 0 20px;
-}
-.projects_games #projects-games-menu div .carousel-container ul li .en-tete {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.projects_games #projects-games-menu div .carousel-container ul li .en-tete h2 {
-  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
-  margin-bottom: 12px;
-  font-family: "font-2", serif;
-  color: #00c1ec;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-animation: transformTitle 1.5s ease forwards;
-          animation: transformTitle 1.5s ease forwards;
-  -webkit-transform-origin: 150%;
-          transform-origin: 150%;
-}
-@media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_games #projects-games-menu div .carousel-container ul li .en-tete h2 {
-    font-size: 1.2rem;
-  }
-}
-@keyframes transformTitle {
-  to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-.projects_games #projects-games-menu div .carousel-container ul li .en-tete svg {
-  font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
-  margin-bottom: 12px;
-}
-@media screen and (max-width: 999px) and (orientation: landscape) {
-  .projects_games #projects-games-menu div .carousel-container ul li .en-tete svg {
-    font-size: 1.2rem;
-  }
-}
-.projects_games #projects-games-menu div .carousel-container ul li .card {
-  position: relative;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-.projects_games #projects-games-menu div .carousel-container ul li .card:hover span,
-.projects_games #projects-games-menu div .carousel-container ul li .card span:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
-  visibility: visible;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-.projects_games #projects-games-menu div .carousel-container ul li .card span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0 auto;
-  line-height: 120%;
-  font-size: 1.5rem;
-  visibility: hidden;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-transform: translateY(300px);
-          transform: translateY(300px);
-}
-.projects_games #projects-games-menu div .carousel-container ul li .card span h3 {
-  padding-bottom: 10px;
-  color: rgb(2, 121, 148);
-}
-.projects_games #projects-games-menu div .carousel-container ul li .card span p {
-  margin-bottom: 30px;
-  color: rgb(40, 40, 40);
-  font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
-}
-.projects_games #projects-games-menu div .carousel-container ul li .card span a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fafeff;
-  background: #00c1ec;
-  width: 130px;
-  font-size: 1rem;
-  padding: 10px;
-  border-radius: 10px;
-}
-@media screen and (max-width: 410px) {
-  .projects_games #projects-games-menu div .carousel-container ul li .card span a {
-    width: 100px;
-  }
-}
-.projects_games #projects-games-menu div .carousel-container ul li .card span a:hover {
-  color: #00c1ec;
-  background: #e7f7fe;
-}
-.projects_games #projects-games-menu div .carousel-container ul li .custom-dot-list-style {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 200px;
-  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */

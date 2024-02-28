@@ -11,7 +11,7 @@ import ButtonRight from "../components/ButtonRight";
 import ButtonLeft from "../components/ButtonLeft";
 import responsive from "../utils/responsiveSettings";
 import { motion } from "framer-motion";
-import { faJs, faJsSquare } from '@fortawesome/free-brands-svg-icons';
+import { faJsSquare } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProjectsJS = () => {

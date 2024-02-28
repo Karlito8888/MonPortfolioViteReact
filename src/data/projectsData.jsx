@@ -3,6 +3,7 @@ import heliumImage from "../assets/images/projets-sass/helium.webp";
 import runImage from "../assets/images/projets-sass/run.webp";
 import lamontagneImage from "../assets/images/projets-sass/la-montagne.webp";
 import lerestoImage from "../assets/images/projets-sass/le-resto.webp";
+import photoStandard from "../assets/images/photostandard.webp";
 
 export const projectsData = {
   sass: [
@@ -65,7 +66,7 @@ export const projectsData = {
       languages: ["React", "Php", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-2.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
     {
@@ -75,7 +76,7 @@ export const projectsData = {
       languages: ["Symfony", "Vue"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-1.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
     {
@@ -85,7 +86,7 @@ export const projectsData = {
       languages: ["Wordpress", "Php", "React"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-3.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
     {
@@ -95,7 +96,7 @@ export const projectsData = {
       languages: ["Vue", "Php"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-4.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
   ],
@@ -107,7 +108,7 @@ export const projectsData = {
       languages: ["React", "Php", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-2.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
     {
@@ -117,7 +118,7 @@ export const projectsData = {
       languages: ["Symfony", "Vue"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-1.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
     {
@@ -127,7 +128,7 @@ export const projectsData = {
       languages: ["Wordpress", "Php", "React"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-3.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
     {
@@ -137,7 +138,7 @@ export const projectsData = {
       languages: ["Vue", "Php"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-4.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
   ],
@@ -149,7 +150,7 @@ export const projectsData = {
       languages: ["React", "Php", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-2.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
     {
@@ -159,7 +160,7 @@ export const projectsData = {
       languages: ["Symfony", "Vue"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-1.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
     {
@@ -169,7 +170,7 @@ export const projectsData = {
       languages: ["Wordpress", "Php", "React"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-3.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
     {
@@ -179,7 +180,7 @@ export const projectsData = {
       languages: ["Vue", "Php"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: "./assets/img/projet-4.jpg",
+      img: photoStandard,
       link: "http://www.google.com",
     },
   ],
