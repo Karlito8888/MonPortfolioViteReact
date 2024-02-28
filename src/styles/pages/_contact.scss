@@ -7,7 +7,7 @@
   grid-template-rows: 20% 60% 20%;
 
 @media (max-width: 933px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
-    grid-template-rows: 30% 55% 15%;
+    grid-template-rows: 25% 50% 25%;
   }
 
   &:after {
@@ -135,6 +135,10 @@
       justify-content: space-evenly;
       overflow: visible;
       padding-left: 20%;
+
+      @media screen and (max-width: 700px) {
+            padding-left: 0px;
+        }
 
       @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
         display: grid;

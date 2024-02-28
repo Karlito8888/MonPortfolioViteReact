@@ -29,13 +29,12 @@
 
 html {
   scroll-behavior: unset;
+  height: 100vh;
+  height: 100dvh;
 }
 
 body {
-  height: -webkit-fill-available;
-  height: -moz-available;
-  height: fill-available;
-  width: 100vw;
+  height: 100%;
   font-family: "font-1", sans-serif;
   font-size: 16px;
   background-color: #fafeff;
@@ -43,7 +42,6 @@ body {
   letter-spacing: 1px;
 }
 
-html,
 #root,
 main,
 .home {
@@ -365,7 +363,7 @@ footer {
   display: grid;
 }
 .home .home-main .main-content h1 {
-  font-size: clamp(1rem, -0.5rem + 4.8vw, 4rem);
+  font-size: clamp(0.9rem, -0.65rem + 4.96vw, 4rem);
   position: relative;
   overflow: visible;
   font-family: "font-2", serif;
@@ -407,7 +405,7 @@ footer {
   }
 }
 .home .home-main .main-content h2 {
-  font-size: clamp(1.3rem, -0.05rem + 4.32vw, 4rem);
+  font-size: clamp(1.1rem, -0.35rem + 4.64vw, 4rem);
   font-weight: 100;
   letter-spacing: 2px;
   margin-top: 5px;
@@ -438,7 +436,7 @@ footer {
 }
 @media (max-width: 933px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
   .contact {
-    grid-template-rows: 30% 55% 15%;
+    grid-template-rows: 25% 50% 25%;
   }
 }
 .contact:after {
@@ -592,6 +590,11 @@ footer {
           justify-content: space-evenly;
   overflow: visible;
   padding-left: 20%;
+}
+@media screen and (max-width: 700px) {
+  .contact main .contact-infos {
+    padding-left: 0px;
+  }
 }
 @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
   .contact main .contact-infos {
@@ -751,14 +754,34 @@ footer {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 20% 60% 20%;
+}
+@media (max-width: 1180px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .project {
+    grid-template-rows: 25% 50% 25%;
+  }
 }
 @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
   .project {
     grid-template-rows: 30% 70%;
   }
 }
+@media screen and (max-width: 820px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  .project {
+    grid-template-rows: 30% 40% 30%;
+  }
+}
+@media screen and (max-width: 540px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  .project {
+    grid-template-rows: 25% 50% 25%;
+  }
+}
 @media screen and (max-width: 500px) {
+  .project {
+    grid-template-rows: 25% 50% 25%;
+  }
+}
+@media screen and (max-width: 500px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
   .project {
     grid-template-rows: 30% 40% 30%;
   }
@@ -781,11 +804,30 @@ footer {
     bottom: -110px;
   }
 }
-@media screen and (min-width: 768px) and (orientation: portrait) {
-  .project {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+.project main .scroll-left {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .project main .scroll-left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0 0 80% 15px;
+  }
+}
+.project main .scroll-right {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+@media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .project main .scroll-right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0 15px 80% 0;
   }
 }
 
@@ -913,7 +955,7 @@ footer {
 .projects_sass {
   height: 100%;
   width: 100%;
-  max-width: 580px;
+  max-width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -928,7 +970,6 @@ footer {
 .projects_sass #projects-sass-menu {
   height: 100%;
   width: 100%;
-  max-width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -953,17 +994,32 @@ footer {
   height: 100%;
   width: 100%;
 }
-.projects_sass #projects-sass-menu div .carousel-container {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list {
   height: 100%;
   width: 100%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li {
-  padding: 0 40px;
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .en-tete {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li {
+  padding: 0 40px 2%;
+}
+@media (max-width: 820px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li {
+    padding: 0 10px 2%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li {
+    padding: 0 10px 2%;
+  }
+}
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -976,8 +1032,8 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .en-tete h2 {
-  font-size: clamp(0.9rem, -0.15rem + 3.36vw, 3rem);
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2 {
+  font-size: clamp(0.8rem, 0.2545rem + 2.1818vw, 2.3rem);
   margin-bottom: 12px;
   font-family: "font-2", serif;
   color: #00c1ec;
@@ -989,7 +1045,7 @@ footer {
           transform-origin: 150%;
 }
 @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  .projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .en-tete h2 {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete h2 {
     font-size: 1.1rem;
   }
 }
@@ -1005,36 +1061,36 @@ footer {
             transform: scaleX(1);
   }
 }
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .en-tete svg {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg {
   font-size: clamp(1.2rem, 0.3rem + 2.88vw, 3rem);
   margin-bottom: 12px;
 }
 @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  .projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .en-tete svg {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .en-tete svg {
     font-size: 1.2rem;
   }
 }
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card {
   position: relative;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   overflow: hidden;
 }
 @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  .projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card {
     max-width: 350px !important;
     margin: 0 auto;
   }
 }
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card:hover span,
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span:hover {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card:hover span,
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
   visibility: visible;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1049,16 +1105,16 @@ footer {
   -webkit-transform: translateY(300px);
           transform: translateY(300px);
 }
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span h3 {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span h3 {
   padding-bottom: 10px;
   color: rgb(2, 121, 148);
 }
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span p {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span p {
   margin-bottom: 30px;
   color: rgb(40, 40, 40);
   font-size: clamp(0.9rem, 0.75rem + 0.48vw, 1.2rem);
 }
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span a {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,15 +1132,15 @@ footer {
   border-radius: 10px;
 }
 @media screen and (max-width: 410px) {
-  .projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span a {
+  .projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a {
     width: 100px;
   }
 }
-.projects_sass #projects-sass-menu div .carousel-container .react-multi-carousel-track li .card span a:hover {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-track li .card span a:hover {
   color: #00c1ec;
   background: #e7f7fe;
 }
-.projects_sass #projects-sass-menu div .carousel-container .custom-dot-list-style {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1094,16 +1150,19 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  height: auto;
   width: 80%;
-  margin: 0 auto 10%;
+  margin: 0 auto;
 }
-.projects_sass #projects-sass-menu div .carousel-container .custom-dot-list-style .react-multi-carousel-dot button {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button {
   height: 16px;
   width: 16px;
   border-color: #00c1ec;
   margin-right: 0;
 }
-.projects_sass #projects-sass-menu div .carousel-container .custom-dot-list-style .react-multi-carousel-dot--active button {
+.projects_sass #projects-sass-menu div .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button {
   background-color: #00c1ec;
 }
 
