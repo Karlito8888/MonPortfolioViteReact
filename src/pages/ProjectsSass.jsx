@@ -15,19 +15,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSass } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectsSass = () => {
-
-const imgAnim = {
-  initial: {
-    opacity: 0,
-    x: Math.floor(Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1)),
-    y: Math.floor(Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1)),
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    y: 0,
-  },
-};
+  const imgAnim = {
+    initial: {
+      opacity: 0,
+      x: Math.floor(Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1)),
+      y: Math.floor(Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1)),
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+    },
+  };
 
   const backgroundStyle = {
     backgroundSize: "cover", // Couvre toute la zone de l'élément
@@ -100,9 +99,11 @@ const imgAnim = {
                       <ProjectCardCarousel
                         style={{
                           ...backgroundStyle,
-                          backgroundImage: `url(${project.img})`,
+                          backgroundImage: `image-set(
+      url(${project.img.jpeg}) type("image/jpeg") 1x, 
+      url(${project.img.webp}) type("image/webp") 1x
+    )`,
                         }}
-                        // title={project.title}
                         date={project.date}
                         infos={project.infos}
                         link={project.link}

@@ -1,8 +1,18 @@
-import gamingCampusImage from "../assets/images/projets-sass/gaming-campus.webp";
-import heliumImage from "../assets/images/projets-sass/helium.webp";
-import runImage from "../assets/images/projets-sass/run.webp";
-import lamontagneImage from "../assets/images/projets-sass/la-montagne.webp";
-import lerestoImage from "../assets/images/projets-sass/le-resto.webp";
+import gamingCampusWebp from "../assets/images/projets-sass/gaming-campus.webp";
+import heliumWebp from "../assets/images/projets-sass/helium.webp";
+import runWebp from "../assets/images/projets-sass/run.webp";
+import lamontagneWebp from "../assets/images/projets-sass/la-montagne.webp";
+import lerestoWebp from "../assets/images/projets-sass/le-resto.webp";
+import yogaWebp from "../assets/images/projets-js/yoga-routine.webp";
+import mdpWebp from "../assets/images/projets-js/mdp-generator.webp";
+import gamingCampusJpg from "../assets/images/projets-sass/gaming-campus.jpg";
+import heliumJpg from "../assets/images/projets-sass/helium.jpg";
+import runJpg from "../assets/images/projets-sass/run.jpg";
+import lamontagneJpg from "../assets/images/projets-sass/la-montagne.jpg";
+import lerestoJpg from "../assets/images/projets-sass/le-resto.jpg";
+import yogaJpg from "../assets/images/projets-js/yoga-routine.jpg";
+import mdpJpg from "../assets/images/projets-js/mdp-generator.jpg";
+
 import photoStandard from "../assets/images/photostandard.webp";
 
 export const projectsData = {
@@ -14,7 +24,10 @@ export const projectsData = {
       languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: lerestoImage,
+      img: {
+        webp: lerestoWebp,
+        jpeg: lerestoJpg,
+      },
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/le-resto/index.html",
     },
     {
@@ -24,7 +37,10 @@ export const projectsData = {
       languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: lamontagneImage,
+      img: {
+        webp: lamontagneWebp,
+        jpeg: lamontagneJpg,
+      },
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/la-montagne/index.html",
     },
     {
@@ -34,7 +50,10 @@ export const projectsData = {
       languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: runImage,
+      img: {
+        webp: runWebp,
+        jpeg: runJpg,
+      },
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/run/index.html",
     },
     {
@@ -44,7 +63,10 @@ export const projectsData = {
       languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: heliumImage,
+      img: {
+        webp: heliumWebp,
+        jpeg: heliumJpg,
+      },
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/helium/index.html",
     },
     {
@@ -54,30 +76,39 @@ export const projectsData = {
       languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: gamingCampusImage,
+      img: {
+        webp: gamingCampusWebp,
+        jpeg: gamingCampusJpg,
+      },
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/gaming-campus/index.html",
     },
   ],
   js: [
     {
       id: 1,
-      title: "Casta",
-      date: "Janvier 2020",
+      title: "Daily Yoga",
+      date: "Juin 2023",
       languages: ["React", "Php", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: photoStandard,
-      link: "http://www.google.com",
+      img: {
+        webp: yogaWebp,
+        jpeg: yogaJpg,
+      },
+      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/yoga-routine/index.html",
     },
     {
       id: 2,
-      title: "Lyon Béton",
-      date: "Mars 2020",
+      title: "PassWord Gén'",
+      date: "Juin 2023",
       languages: ["Symfony", "Vue"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: photoStandard,
-      link: "http://www.google.com",
+      img: {
+        webp: mdpWebp,
+        jpeg: mdpJpg,
+      },
+      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/password-maker/index.html",
     },
     {
       id: 3,
