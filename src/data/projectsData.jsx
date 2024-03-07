@@ -5,6 +5,7 @@ import lamontagneWebp from "../assets/images/projets-sass/la-montagne.webp";
 import lerestoWebp from "../assets/images/projets-sass/le-resto.webp";
 import yogaWebp from "../assets/images/projets-js/yoga-routine.webp";
 import mdpWebp from "../assets/images/projets-js/mdp-generator.webp";
+import snake from "../assets/images/projets-games/snake.webp"
 
 import photoStandard from "../assets/images/photostandard.webp";
 
@@ -148,13 +149,13 @@ export const projectsData = {
   games: [
     {
       id: 1,
-      title: "Casta",
-      date: "Janvier 2020",
+      title: "The Snake",
+      date: "Février 2023",
       languages: ["React", "Php", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: photoStandard,
-      link: "http://www.google.com",
+      img: snake,
+      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/snake-game/index.html",
     },
     {
       id: 2,
