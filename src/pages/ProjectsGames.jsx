@@ -29,18 +29,13 @@ const ProjectsGames = () => {
   };
 
   const backgroundStyle = {
-    backgroundSize: "cover", // Couvre toute la zone de l'élément
-    backgroundPosition: "center", // Centre l'image dans l'élément
+    backgroundSize: "cover",
+    backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "auto", // Hauteur fixe pour l'élément, ajustez selon vos besoins
-    width: "100%", // Largeur de l'élément (peut être ajustée selon vos besoins)
-    maxWidth: "700px",
+    height: "auto",
+    width: "100%",
     aspectRatio: "16/9",
     borderRadius: "10px",
-    display: "flex", // Pour centrer le contenu dans l'élément, si nécessaire
-    justifyContent: "center", // Centre horizontalement le contenu
-    alignItems: "center", // Centre verticalement le contenu
-    color: "#e2e2e2", // Couleur du texte pour contraster avec le fond, si vous avez du texte
   };
   return (
     <>
@@ -96,11 +91,8 @@ const ProjectsGames = () => {
                         />
                       </div>
                       <ProjectCardCarousel
-                        style={{
-                          ...backgroundStyle,
-                          backgroundImage: `url(${project.img})`,
-                        }}
-                        // title={project.title}
+                        backgroundStyle={backgroundStyle}
+                        webp={project.img}
                         date={project.date}
                         infos={project.infos}
                         link={project.link}

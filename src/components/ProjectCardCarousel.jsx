@@ -1,28 +1,22 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 const ProjectCardCarousel = ({
   backgroundStyle,
-  jpeg,
   webp,
   date,
   infos,
   link,
 }) => {
-  const ref = useRef(null);
-
-  useEffect(() => {
-    if (ref.current) {
-      // Appliquer le style background-image avec image-set, en utilisant les URLs JPEG et WebP
-      ref.current.style.backgroundImage = `
-        image-set(
-          url(${jpeg}) type("image/jpeg") 1x, 
-          url(${webp}) type("image/webp") 1x
-        )`;
-    }
-  }, [jpeg, webp]);
+  const styleWithBackground = {
+    ...backgroundStyle,
+    backgroundImage: `url(${webp})`,
+  };
 
   return (
-    <div className="card hover" style={backgroundStyle} ref={ref}>
+    <div
+      className="card hover"
+      style={styleWithBackground}
+    >
       <span>
         <h3>{date}</h3>
         <p>{infos}</p>

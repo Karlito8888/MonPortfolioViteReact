@@ -5,13 +5,6 @@ import lamontagneWebp from "../assets/images/projets-sass/la-montagne.webp";
 import lerestoWebp from "../assets/images/projets-sass/le-resto.webp";
 import yogaWebp from "../assets/images/projets-js/yoga-routine.webp";
 import mdpWebp from "../assets/images/projets-js/mdp-generator.webp";
-import gamingCampusJpg from "../assets/images/projets-sass/gaming-campus.jpg";
-import heliumJpg from "../assets/images/projets-sass/helium.jpg";
-import runJpg from "../assets/images/projets-sass/run.jpg";
-import lamontagneJpg from "../assets/images/projets-sass/la-montagne.jpg";
-import lerestoJpg from "../assets/images/projets-sass/le-resto.jpg";
-import yogaJpg from "../assets/images/projets-js/yoga-routine.jpg";
-import mdpJpg from "../assets/images/projets-js/mdp-generator.jpg";
 
 import photoStandard from "../assets/images/photostandard.webp";
 
@@ -24,10 +17,7 @@ export const projectsData = {
       languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: {
-        webp: lerestoWebp,
-        jpeg: lerestoJpg,
-      },
+      img: lerestoWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/le-resto/index.html",
     },
     {
@@ -37,10 +27,7 @@ export const projectsData = {
       languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: {
-        webp: lamontagneWebp,
-        jpeg: lamontagneJpg,
-      },
+      img: lamontagneWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/la-montagne/index.html",
     },
     {
@@ -50,10 +37,7 @@ export const projectsData = {
       languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: {
-        webp: runWebp,
-        jpeg: runJpg,
-      },
+      img: runWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/run/index.html",
     },
     {
@@ -63,10 +47,7 @@ export const projectsData = {
       languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: {
-        webp: heliumWebp,
-        jpeg: heliumJpg,
-      },
+      img: heliumWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/helium/index.html",
     },
     {
@@ -76,10 +57,7 @@ export const projectsData = {
       languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: {
-        webp: gamingCampusWebp,
-        jpeg: gamingCampusJpg,
-      },
+      img: gamingCampusWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/gaming-campus/index.html",
     },
   ],
@@ -91,10 +69,7 @@ export const projectsData = {
       languages: ["React", "Php", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: {
-        webp: yogaWebp,
-        jpeg: yogaJpg,
-      },
+      img: yogaWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/yoga-routine/index.html",
     },
     {
@@ -104,10 +79,7 @@ export const projectsData = {
       languages: ["Symfony", "Vue"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: {
-        webp: mdpWebp,
-        jpeg: mdpJpg,
-      },
+      img: mdpWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/password-maker/index.html",
     },
     {

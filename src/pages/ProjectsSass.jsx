@@ -92,9 +92,8 @@ const ProjectsSass = () => {
                         />
                       </div>
                       <ProjectCardCarousel
-                        backgroundStyle={backgroundStyle} // Pass existing styles as a prop
-                        jpeg={project.img.jpeg} // Pass JPEG URL as a prop
-                        webp={project.img.webp} // Pass WebP URL as a prop
+                        backgroundStyle={backgroundStyle}
+                        webp={project.img}
                         date={project.date}
                         infos={project.infos}
                         link={project.link}

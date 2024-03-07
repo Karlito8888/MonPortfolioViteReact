@@ -29,10 +29,10 @@ const ProjectsReact = () => {
   };
 
   const backgroundStyle = {
-    backgroundSize: "cover", // Couvre toute la zone de l'élément
-    backgroundPosition: "center", // Centre l'image dans l'élément
+    backgroundSize: "cover",
+    backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "auto", // Hauteur fixe pour l'élément, ajustez selon vos besoins
+    height: "auto",
     width: "100%",
     aspectRatio: "16/9",
     borderRadius: "10px",
@@ -91,10 +91,8 @@ const ProjectsReact = () => {
                         />
                       </div>
                       <ProjectCardCarousel
-                        style={{
-                          ...backgroundStyle,
-                          backgroundImage: `url(${project.img})`,
-                        }}
+                        backgroundStyle={backgroundStyle}
+                        webp={project.img}
                         date={project.date}
                         infos={project.infos}
                         link={project.link}
