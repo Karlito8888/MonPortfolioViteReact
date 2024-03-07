@@ -99,12 +99,8 @@ return (
                     <ProjectCardCarousel
                       style={{
                         ...backgroundStyle,
-                        backgroundImage: `image-set(
-      url(${project.img.jpeg}) type("image/jpeg") 1x, 
-      url(${project.img.webp}) type("image/webp") 1x
-    )`,
+                        backgroundImage: `url(${project.img.jpeg})`,
                       }}
-                      // title={project.title}
                       date={project.date}
                       infos={project.infos}
                       link={project.link}

@@ -10,20 +10,12 @@
   align-items: center;
   margin: 0 auto;
 
-  // @media screen and (max-width: 999px) and (orientation: landscape) {
-  //        position: absolute;
-  //        left: 50%;
-  //        transform: translateX(-50%);
-  //        width: 100%;
-  //       }
-
   #projects-sass-menu,
   #projects-js-menu,
   #projects-react-menu,
   #projects-games-menu {
     height: 100%;
     width: 100%;
-    // max-width: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,12 +35,6 @@
       .react-multi-carousel-list {
         height: 100%;
         width: 100%;
-        // align-items: flex-start;
-
-        // @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
-        //   display: flex;
-        //   align-items: flex-start;
-        // }
 
         .react-multi-carousel-track {
           display: flex;
@@ -102,7 +88,6 @@
               position: relative;
               transition: all 0.3s ease;
               overflow: hidden;
-              // margin-bottom: 50px;
               @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
                 max-width: 350px !important;
                 margin: 0 auto;
