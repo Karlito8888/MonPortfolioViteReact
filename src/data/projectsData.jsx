@@ -166,7 +166,7 @@ export const projectsData = {
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: tictactoe,
-      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/tic-tac-toe/",
+      link: "https://karlito8888.github.io/tic-tac-toe/",
     },
     {
       id: 3,
