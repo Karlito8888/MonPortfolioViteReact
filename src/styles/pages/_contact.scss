@@ -6,7 +6,7 @@
   display: grid;
   grid-template-rows: 20% 60% 20%;
 
-@media (max-width: 933px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  @media (max-width: 933px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
     grid-template-rows: 25% 50% 25%;
   }
 
@@ -60,7 +60,7 @@
       flex-direction: column;
       justify-content: center;
 
-    @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+      @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
         display: none;
       }
       @media screen and (max-width: 700px) {
@@ -137,8 +137,8 @@
       padding-left: 20%;
 
       @media screen and (max-width: 700px) {
-            padding-left: 0px;
-        }
+        padding-left: 0px;
+      }
 
       @media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
         display: grid;
@@ -147,8 +147,8 @@
         grid-template-areas:
           "ad tel"
           "ad mail";
-          text-align: center;
-            padding-left: 0;
+        text-align: center;
+        padding-left: 0;
         align-items: center;
 
         .content-adresse {
@@ -163,9 +163,9 @@
         }
       }
 
-@media screen and (max-width: 700px) {
-  text-align: center;
-}
+      @media screen and (max-width: 700px) {
+        text-align: center;
+      }
 
       h4 {
         color: $color-4;
@@ -174,10 +174,11 @@
         margin-bottom: 10px;
       }
 
-      p {
+      p, a {
         font-size: clamp(0.8rem, 0.65rem + 0.48vw, 1.1rem);
         letter-spacing: 2px;
         line-height: 130%;
+        color: black;
 
         @media (max-width: 932px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
           font-size: 0.8rem;

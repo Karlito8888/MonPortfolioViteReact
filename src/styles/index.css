@@ -629,13 +629,14 @@ footer {
   font-weight: 200;
   margin-bottom: 10px;
 }
-.contact main .contact-infos p {
+.contact main .contact-infos p, .contact main .contact-infos a {
   font-size: clamp(0.8rem, 0.65rem + 0.48vw, 1.1rem);
   letter-spacing: 2px;
   line-height: 130%;
+  color: black;
 }
 @media (max-width: 932px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  .contact main .contact-infos p {
+  .contact main .contact-infos p, .contact main .contact-infos a {
     font-size: 0.8rem;
   }
 }
