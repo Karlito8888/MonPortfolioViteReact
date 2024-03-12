@@ -5,6 +5,7 @@ import lamontagneWebp from "../assets/images/projets-sass/la-montagne.webp";
 import lerestoWebp from "../assets/images/projets-sass/le-resto.webp";
 import yogaWebp from "../assets/images/projets-js/yoga-routine.webp";
 import mdpWebp from "../assets/images/projets-js/mdp-generator.webp";
+import country from "../assets/images/projets-js/country.webp";
 import snake from "../assets/images/projets-games/snake.webp"
 import tictactoe from "../assets/images/projets-games/tic-tac-toe.webp"
 
@@ -86,13 +87,13 @@ export const projectsData = {
     },
     {
       id: 3,
-      title: "Everpost",
-      date: "Avril 2020",
+      title: "Country App'",
+      date: "Mai 2023",
       languages: ["Wordpress", "Php", "React"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: photoStandard,
-      link: "http://www.google.com",
+      img: country,
+      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/country-app/index.html",
     },
     {
       id: 4,
