@@ -6,6 +6,7 @@ import lerestoWebp from "../assets/images/projets-sass/le-resto.webp";
 import yogaWebp from "../assets/images/projets-js/yoga-routine.webp";
 import mdpWebp from "../assets/images/projets-js/mdp-generator.webp";
 import country from "../assets/images/projets-js/country.webp";
+import cine from "../assets/images/projets-react/cine.webp";
 import snake from "../assets/images/projets-games/snake.webp"
 import tictactoe from "../assets/images/projets-games/tic-tac-toe.webp"
 
@@ -109,13 +110,13 @@ export const projectsData = {
   react: [
     {
       id: 1,
-      title: "Casta",
-      date: "Janvier 2020",
+      title: "Ciné App'",
+      date: "Novembre 2023",
       languages: ["React", "Php", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: photoStandard,
-      link: "http://www.google.com",
+      img: cine,
+      link: "https://karlito8888.github.io/cine-app-vite/",
     },
     {
       id: 2,
