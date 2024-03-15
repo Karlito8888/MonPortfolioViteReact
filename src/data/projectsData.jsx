@@ -9,6 +9,7 @@ import country from "../assets/images/projets-js/country.webp";
 import cine from "../assets/images/projets-react/cine.webp";
 import snake from "../assets/images/projets-games/snake.webp"
 import tictactoe from "../assets/images/projets-games/tic-tac-toe.webp"
+import bubble from "../assets/images/projets-games/bubble-shot.webp"
 
 import photoStandard from "../assets/images/photostandard.webp";
 
@@ -98,8 +99,8 @@ export const projectsData = {
     },
     {
       id: 4,
-      title: "Creative Dev",
-      date: "Juillet 2020",
+      title: "En construction...",
+      date: "",
       languages: ["Vue", "Php"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
@@ -172,18 +173,18 @@ export const projectsData = {
     },
     {
       id: 3,
-      title: "Everpost",
-      date: "Avril 2020",
+      title: "Bubble Shot",
+      date: "Novembre 2023",
       languages: ["Wordpress", "Php", "React"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: photoStandard,
-      link: "http://www.google.com",
+      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/bubble-shot/index.html",
     },
     {
       id: 4,
-      title: "Creative Dev",
-      date: "Juillet 2020",
+      title: "En construction...",
+      date: "",
       languages: ["Vue", "Php"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
