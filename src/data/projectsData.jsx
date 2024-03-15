@@ -99,7 +99,7 @@ export const projectsData = {
     },
     {
       id: 4,
-      title: "En construction...",
+      title: "En cours...",
       date: "",
       languages: ["Vue", "Php"],
       infos:
@@ -121,8 +121,8 @@ export const projectsData = {
     },
     {
       id: 2,
-      title: "Lyon Béton",
-      date: "Mars 2020",
+      title: "",
+      date: "",
       languages: ["Symfony", "Vue"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
@@ -131,8 +131,8 @@ export const projectsData = {
     },
     {
       id: 3,
-      title: "Everpost",
-      date: "Avril 2020",
+      title: "",
+      date: "",
       languages: ["Wordpress", "Php", "React"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
@@ -141,8 +141,8 @@ export const projectsData = {
     },
     {
       id: 4,
-      title: "Creative Dev",
-      date: "Juillet 2020",
+      title: "",
+      date: "",
       languages: ["Vue", "Php"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
@@ -178,12 +178,12 @@ export const projectsData = {
       languages: ["Wordpress", "Php", "React"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: photoStandard,
+      img: bubble,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/bubble-shot/index.html",
     },
     {
       id: 4,
-      title: "En construction...",
+      title: "En cours...",
       date: "",
       languages: ["Vue", "Php"],
       infos:
