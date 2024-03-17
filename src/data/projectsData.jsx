@@ -6,6 +6,7 @@ import lerestoWebp from "../assets/images/projets-sass/le-resto.webp";
 import yogaWebp from "../assets/images/projets-js/yoga-routine.webp";
 import mdpWebp from "../assets/images/projets-js/mdp-generator.webp";
 import country from "../assets/images/projets-js/country.webp";
+import calculator from "../assets/images/projets-js/calculator.webp";
 import cine from "../assets/images/projets-react/cine.webp";
 import snake from "../assets/images/projets-games/snake.webp"
 import tictactoe from "../assets/images/projets-games/tic-tac-toe.webp"
@@ -19,7 +20,6 @@ export const projectsData = {
       id: 1,
       title: "Le Resto",
       date: "Mai 2023",
-      languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: lerestoWebp,
@@ -29,7 +29,6 @@ export const projectsData = {
       id: 2,
       title: "La Montagne",
       date: "Mai 2023",
-      languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: lamontagneWebp,
@@ -39,7 +38,6 @@ export const projectsData = {
       id: 3,
       title: "Run",
       date: "Mars 2023",
-      languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: runWebp,
@@ -49,7 +47,6 @@ export const projectsData = {
       id: 4,
       title: "Hélium",
       date: "Mars 2023",
-      languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: heliumWebp,
@@ -59,7 +56,6 @@ export const projectsData = {
       id: 5,
       title: "Gaming Campus",
       date: "Mars 2023",
-      languages: ["HTML", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: gamingCampusWebp,
@@ -71,7 +67,6 @@ export const projectsData = {
       id: 1,
       title: "Daily Yoga",
       date: "Juin 2023",
-      languages: ["React", "Php", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: yogaWebp,
@@ -81,7 +76,6 @@ export const projectsData = {
       id: 2,
       title: "PassWord Gén'",
       date: "Juin 2023",
-      languages: ["Symfony", "Vue"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: mdpWebp,
@@ -91,7 +85,6 @@ export const projectsData = {
       id: 3,
       title: "Country App'",
       date: "Mai 2023",
-      languages: ["Wordpress", "Php", "React"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: country,
@@ -99,13 +92,12 @@ export const projectsData = {
     },
     {
       id: 4,
-      title: "En cours...",
-      date: "",
-      languages: ["Vue", "Php"],
+      title: "Calculator",
+      date: "Février 2024",
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: photoStandard,
-      link: "http://www.google.com",
+      img: calculator,
+      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/calculator/index.html",
     },
   ],
   react: [
@@ -113,7 +105,6 @@ export const projectsData = {
       id: 1,
       title: "Ciné App'",
       date: "Novembre 2023",
-      languages: ["React", "Php", "Sass"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: cine,
@@ -123,7 +114,6 @@ export const projectsData = {
       id: 2,
       title: "",
       date: "",
-      languages: ["Symfony", "Vue"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: photoStandard,
@@ -133,7 +123,6 @@ export const projectsData = {
       id: 3,
       title: "",
       date: "",
-      languages: ["Wordpress", "Php", "React"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: photoStandard,
@@ -143,7 +132,6 @@ export const projectsData = {
       id: 4,
       title: "",
       date: "",
-      languages: ["Vue", "Php"],
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: photoStandard,
