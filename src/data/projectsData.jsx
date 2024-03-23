@@ -1,5 +1,4 @@
 import gamingCampusWebp from "../assets/images/projets-sass/gaming-campus.webp";
-import heliumWebp from "../assets/images/projets-sass/helium.webp";
 import runWebp from "../assets/images/projets-sass/run.webp";
 import lamontagneWebp from "../assets/images/projets-sass/la-montagne.webp";
 import lerestoWebp from "../assets/images/projets-sass/le-resto.webp";
@@ -36,24 +35,6 @@ export const projectsData = {
     },
     {
       id: 3,
-      title: "Run",
-      date: "Mars 2023",
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: runWebp,
-      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/run/index.html",
-    },
-    {
-      id: 4,
-      title: "Hélium",
-      date: "Mars 2023",
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: heliumWebp,
-      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/helium/index.html",
-    },
-    {
-      id: 5,
       title: "Gaming Campus",
       date: "Mars 2023",
       infos:
@@ -61,10 +42,28 @@ export const projectsData = {
       img: gamingCampusWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/gaming-campus/index.html",
     },
+    {
+      id: 4,
+      title: "Run",
+      date: "Mars 2023",
+      infos:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+      img: runWebp,
+      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/run/index.html",
+    },
   ],
   js: [
     {
       id: 1,
+      title: "Country App'",
+      date: "Mai 2023",
+      infos:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+      img: country,
+      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/country-app/index.html",
+    },
+    {
+      id: 2,
       title: "Daily Yoga",
       date: "Juin 2023",
       infos:
@@ -73,22 +72,13 @@ export const projectsData = {
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/yoga-routine/index.html",
     },
     {
-      id: 2,
+      id: 3,
       title: "PassWord Gén'",
       date: "Juin 2023",
       infos:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
       img: mdpWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/password-maker/index.html",
-    },
-    {
-      id: 3,
-      title: "Country App'",
-      date: "Mai 2023",
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: country,
-      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/country-app/index.html",
     },
     {
       id: 4,
