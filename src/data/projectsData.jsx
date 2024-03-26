@@ -7,6 +7,7 @@ import mdpWebp from "../assets/images/projets-js/mdp-generator.webp";
 import country from "../assets/images/projets-js/country.webp";
 import calculator from "../assets/images/projets-js/calculator.webp";
 import cine from "../assets/images/projets-react/cine.webp";
+import watchTower from "../assets/images/projets-react/watch-tower.webp";
 import snake from "../assets/images/projets-games/snake.webp"
 import tictactoe from "../assets/images/projets-games/tic-tac-toe.webp"
 import bubble from "../assets/images/projets-games/bubble-shot.webp"
@@ -19,8 +20,7 @@ export const projectsData = {
       id: 1,
       title: "Le Resto",
       date: "Mai 2023",
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+      infos: "100% RESPONSIVE  💻 📱",
       img: lerestoWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/le-resto/index.html",
     },
@@ -28,8 +28,7 @@ export const projectsData = {
       id: 2,
       title: "La Montagne",
       date: "Mai 2023",
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+      infos: "100% RESPONSIVE  💻 📱",
       img: lamontagneWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/la-montagne/index.html",
     },
@@ -37,8 +36,7 @@ export const projectsData = {
       id: 3,
       title: "Gaming Campus",
       date: "Mars 2023",
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+      infos: "100% RESPONSIVE  💻 📱",
       img: gamingCampusWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/gaming-campus/index.html",
     },
@@ -46,8 +44,7 @@ export const projectsData = {
       id: 4,
       title: "Run",
       date: "Mars 2023",
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+      infos: "100% RESPONSIVE  💻 📱",
       img: runWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/run/index.html",
     },
@@ -57,8 +54,7 @@ export const projectsData = {
       id: 1,
       title: "Country App'",
       date: "Mai 2023",
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+      infos: "Projet 100% JS et Responsive, réalisé avec l'API RestCountries.",
       img: country,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/country-app/index.html",
     },
@@ -67,7 +63,7 @@ export const projectsData = {
       title: "Daily Yoga",
       date: "Juin 2023",
       infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+        "Ne perdez pas le rythme, et venez faire quelques exercices au quotidien.",
       img: yogaWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/yoga-routine/index.html",
     },
@@ -76,7 +72,7 @@ export const projectsData = {
       title: "PassWord Gén'",
       date: "Juin 2023",
       infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+        "Un manque d'inspiration pour vos mots de passe !?? J'ai la solution !",
       img: mdpWebp,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/password-maker/index.html",
     },
@@ -84,8 +80,7 @@ export const projectsData = {
       id: 4,
       title: "Calculator",
       date: "Février 2024",
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+      infos: "\"L'addition, s'il vous plait !\"",
       img: calculator,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/calculator/index.html",
     },
@@ -93,39 +88,21 @@ export const projectsData = {
   react: [
     {
       id: 1,
-      title: "Ciné App'",
-      date: "Novembre 2023",
+      title: "Watch Tower",
+      date: "Mars 2024",
       infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: cine,
-      link: "https://karlito8888.github.io/cine-app-vite/",
+        "Projet 100% React et Responsive, réalisé avec l'API CoinGecko... Suivez le cours des cryptomonnaies en temps réel !",
+      img: watchTower,
+      link: "https://karlito8888.github.io/watch-tower/",
     },
     {
       id: 2,
-      title: "",
-      date: "",
+      title: "Ciné App'",
+      date: "Novembre 2023",
       infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: photoStandard,
-      link: "http://www.google.com",
-    },
-    {
-      id: 3,
-      title: "",
-      date: "",
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: photoStandard,
-      link: "http://www.google.com",
-    },
-    {
-      id: 4,
-      title: "",
-      date: "",
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: photoStandard,
-      link: "http://www.google.com",
+        "Projet 100% React Vite et Responsive, réalisé avec l'API TheMovieDB... Et vous, quel est votre film préféré ?",
+      img: cine,
+      link: "https://karlito8888.github.io/cine-app-vite/",
     },
   ],
   games: [
@@ -133,9 +110,7 @@ export const projectsData = {
       id: 1,
       title: "The Snake",
       date: "Février 2023",
-      languages: ["React", "Php", "Sass"],
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+      infos: "Le célèbre jeu du serpent...!  (100% JS)",
       img: snake,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/snake-game/index.html",
     },
@@ -143,9 +118,7 @@ export const projectsData = {
       id: 2,
       title: "Tic Tac Toe",
       date: "Mars 2024",
-      languages: ["Symfony", "Vue"],
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+      infos: "Jouez à 2, et que le meilleur gagne !",
       img: tictactoe,
       link: "https://karlito8888.github.io/tic-tac-toe/",
     },
@@ -153,21 +126,9 @@ export const projectsData = {
       id: 3,
       title: "Bubble Shot",
       date: "Novembre 2023",
-      languages: ["Wordpress", "Php", "React"],
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+      infos: "Tentez d'éclater un maximum de bulles en un temps record !",
       img: bubble,
       link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/bubble-shot/index.html",
-    },
-    {
-      id: 4,
-      title: "En cours...",
-      date: "",
-      languages: ["Vue", "Php"],
-      infos:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-      img: photoStandard,
-      link: "http://www.google.com",
     },
   ],
 };
