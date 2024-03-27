@@ -12,7 +12,7 @@ const socialLinks = [
   },
   {
     id: "linkedin",
-    href: "https://fr.linkedin.com/",
+    href: "https://www.linkedin.com/in/charles-bourgault-407694300/",
     icon: faLinkedin,
     label: "Mon LinkedIn",
   },
