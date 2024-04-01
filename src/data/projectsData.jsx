@@ -18,7 +18,7 @@ export const projectsData = {
   sass: [
     {
       id: 1,
-      title: "Le Resto",
+      title: "The Resto",
       date: "Mai 2023",
       infos: "100% RESPONSIVE  💻 📱",
       img: lerestoWebp,
