@@ -26,7 +26,7 @@ const Home = () => {
           <div className="home-main">
             <div className="main-content">
               <h1>Charles BOURGAULT</h1>
-              <h2>Intégrateur Web</h2>
+              <h2>Développeur Web</h2>
               <DynamicText />
             </div>
           </div>
