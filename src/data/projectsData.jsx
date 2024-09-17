@@ -6,6 +6,7 @@ import yogaWebp from "../assets/images/projets-js/yoga-routine.webp";
 import mdpWebp from "../assets/images/projets-js/mdp-generator.webp";
 import country from "../assets/images/projets-js/country.webp";
 import calculator from "../assets/images/projets-js/calculator.webp";
+import logement from "../assets/images/projets-react/logement.webp";
 import cine from "../assets/images/projets-react/cine.webp";
 import watchTower from "../assets/images/projets-react/watch-tower.webp";
 import snake from "../assets/images/projets-games/snake.webp"
@@ -88,6 +89,15 @@ export const projectsData = {
   react: [
     {
       id: 1,
+      title: "Kaza",
+      date: "Août 2024",
+      infos: 
+        "Projet 100% React et Responsive, réalisé dans le cadre de ma formation chez OpenClassRooms !",
+      img: logement,
+      link: "https://karlito8888.github.io/OCR-Kasa/",
+    },
+    {
+      id: 2,
       title: "Watch Tower",
       date: "Mars 2024",
       infos:
@@ -96,7 +106,7 @@ export const projectsData = {
       link: "https://karlito8888.github.io/watch-tower/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Ciné App'",
       date: "Novembre 2023",
       infos:
