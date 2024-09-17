@@ -94,7 +94,7 @@ export const projectsData = {
       infos: 
         "Projet 100% React et Responsive, réalisé dans le cadre de ma formation chez OpenClassRooms !",
       img: logement,
-      link: "https://karlito8888.github.io/OCR-Kasa/",
+      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/kaza/index.html",
     },
     {
       id: 2,
