@@ -89,15 +89,6 @@ export const projectsData = {
   react: [
     {
       id: 1,
-      title: "Kaza",
-      date: "Août 2024",
-      infos: 
-        "Projet 100% React et Responsive, réalisé dans le cadre de ma formation chez OpenClassRooms !",
-      img: logement,
-      link: "https://karlito8888.github.io/chabouchabou.github.io/assets/projects/kaza/index.html",
-    },
-    {
-      id: 2,
       title: "Watch Tower",
       date: "Mars 2024",
       infos:
@@ -106,7 +97,7 @@ export const projectsData = {
       link: "https://karlito8888.github.io/watch-tower/",
     },
     {
-      id: 3,
+      id: 2,
       title: "Ciné App'",
       date: "Novembre 2023",
       infos:
