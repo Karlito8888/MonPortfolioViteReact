@@ -1,34 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/logo-ico-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/logo-ico-16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/logo-ico-180.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Charles BOURGAULT, Développeur Web Frontend</title>
+    <meta
+      name="description"
+      content="Déveveloppeur Web Frontend situé à Paris, je vous présente mes compétences dans le domaine du développement web à travers mon portfolio. Différents projets de sites statiques et de sites dynamiques, tous responsives, en s'appuyant uniquement sur les langages connues comme le HTML, le CSS, SASS, JAVASCRIPT, et REACT... Quelques jeux aussi, et quelques notions de Backend apprises de manière autodidacte, telles PHP, MySQL, NodeJS, MongoDB. N'hésitez pas à me contacter."
+    />
+    <meta
+      name="keywords"
+      content="Développeur Web, Portfolio, HTML, CSS, JavaScript, React, NodeJS, MongoDB"
+    />
+    <meta
+      property="og:title"
+      content="Portfolio - Charles BOURGAULT, Développeur Web Frontend"
+    />
+    <meta
+      property="og:description"
+      content="Déveveloppeur Web Frontend situé à Paris, je vous présente mes compétences dans le domaine du développement web à travers mon portfolio. Différents projets de sites statiques et de sites dynamiques, tous responsives, en s'appuyant uniquement sur les langages connues comme le HTML, le CSS, SASS, JAVASCRIPT, et REACT... Quelques jeux aussi, et quelques notions de Backend apprises de manière autodidacte, telles PHP, MySQL, NodeJS, MongoDB. N'hésitez pas à me contacter."
+    />
+    <meta property="og:url" content="https://chabouchabou.netlify.app/" />
+    <meta property="og:site_name" content="Charles BOURGAULT - Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:language" content="fr" />
+    <meta property="og:image" content="./assets/images/logo-ico-256.png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+    <meta property="og:image:alt" content="Logo de mon site portfolio" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Charles BOURGAULT",
+        "jobTitle": "Développeur Web Frontend",
+        "image": "./assets/images/logo-ico-256.png",
+        "description": "Développeur Web Frontend situé à Paris, spécialisé dans le développement de sites web responsives en React.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "10 rue du Colisée",
+          "addressLocality": "Paris, France",
+          "addressRegion": "Ile-de-France",
+          "postalCode": "F-75008",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33642663300",
+        "openingHours": "Mo-Su",
+        "url": "https://chabouchabou.netlify.app/",
+        "sameAs": [
+          "https://www.linkedin.com/in/charles-bourgault-407694300/",
+          "https://https://github.com/Karlito8888"
+        ],
+        "email": "charles.bourgault@example.com",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance",
+          "url": "https://chabouchabou.netlify.app/",
+          "logo": "./assets/images/logo-ico-256.png",
+          "sameAs": "https://www.chabouchabou.netlify.app/"
+        },
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "SASS",
+          "PHP",
+          "MySQL",
+          "NodeJS",
+          "MongoDB"
+        ]
+      }
+    </script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo-ico-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logo-ico-16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo-ico-180.png" />
-  <link rel="manifest" href="/manifest.json">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-    Portfolio - Charles BOURGAULT, Intégrateur et Développeur Web Frontend
-  </title>
-  <meta name="description"
-    content="Intégrateur Web et Déveveloppeur Web Frontend situé à Paris, je vous présente mes compétences dans le domaine du développement web à travers mon portfolio. Différents projets de sites statiques et de sites dynamiques, tous responsives, en s'appuyant uniquement sur les langages connues comme le HTML, le CSS, SASS, JAVASCRIPT, et REACT... Quelques jeux aussi, et quelques notions de Backend apprises de manière autodidacte, telles PHP, MySQL, NodeJS, MongoDB. N'hésitez pas à me contacter." />
-  <meta property="og:title" content="Portfolio - Charles BOURGAULT, Intégrateur et Développeur Web Frontend" />
-  <meta property="og:description"
-    content="Intégrateur Web et Déveveloppeur Web Frontend situé à Paris, je vous présente mes compétences dans le domaine du développement web à travers mon portfolio. Différents projets de sites statiques et de sites dynamiques, tous responsives, en s'appuyant uniquement sur les langages connues comme le HTML, le CSS, SASS, JAVASCRIPT, et REACT... Quelques jeux aussi, et quelques notions de Backend apprises de manière autodidacte, telles PHP, MySQL, NodeJS, MongoDB. N'hésitez pas à me contacter." />
-  <meta property="og:url" content="https://chabouchabou.netlify.app/" />
-  <meta property="og:image" content="./assets/images/logo-ico-256.png" />
-  <meta property="og:image:width" content="256" />
-  <meta property="og:image:height" content="256" />
-  <meta property="og:image:alt" content="Logo de mon site portfolio" />
-  <meta property="og:type" content="website" />
-  <!-- <meta property="og:site-name" content="Nom du site" /> -->
-  <meta property="og:locale" content="fr_FR" />
-</head>
-
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
-
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
